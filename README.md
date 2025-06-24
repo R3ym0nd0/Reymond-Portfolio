@@ -22,10 +22,11 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 - ✅ Improved responsive layout for smoother experience across all devices
 - ✅ Added **Hero Section**
-- ✅ Slight changes in the **Home Section**
-  - Added a non-functional "Download Resume" button (placeholder for now)
-  - Added "Contact Me" button
 - ✅ Reworked **Story Section** into a cleaner **Journey Timeline**
+- ✅ Works smoothly on updated versions of **common browsers** (Chrome, Firefox, Edge, Safari, Opera)
+- ✅ Slight changes in the **Home Section**
+  - Added "Contact Me" button
+  - Added a non-functional "Resume" button (placeholder for now)
 - ✅ Minor updates in the **Footer** section
   - Social platform links added
 
@@ -41,10 +42,10 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ## 🚧 Limitations
 
-- "Skills" and "Projects" sections are still placeholders
-- Resume button is not functional yet
-- Still lacks animations or interactive enhancements
-- Browser compatibility may vary (not fully tested on Safari/Edge)
+- **Skills** and **Projects** sections are still placeholders
+- **Resume** button is not functional yet
+- Still lacks **animations** or **interactive enhancements**
+- **In-app browsers** (like Facebook browser or Snaptube) may display layout issues to support modern CSS features
 
 ---
 
