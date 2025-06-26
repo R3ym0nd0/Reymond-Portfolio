@@ -18,9 +18,13 @@ nav {
     align-items: center;
 }
 
-#header-bar h2 {
+#name {
     color: white;
     font-size: 1rem;
+}
+
+#name:hover {
+    color: tomato;
 }
 
 #hamburger-icon {
@@ -62,20 +66,12 @@ nav {
     padding: 0.875em;
 }
 
-#nav-bar ul li {
-    list-style-type: none;
-}
-
 .nav-section {
     display: flex;
 
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
-}
-
-.nav-section:active {
-    color: tomato;
 }
 
 /* TABLET */
@@ -86,12 +82,11 @@ nav {
     }   
 
     #nav-bar ul {
-        flex-direction: row;
-        gap: 5em;
+        gap: 1.5em;
    }
 
     .nav-section {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -102,10 +97,6 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;     
-    }
-
-    #header-bar h2 {
-        font-size: 1.3rem;
     }
 
     .line.show {
@@ -123,11 +114,11 @@ nav {
 
     #nav-bar ul {
         flex-direction: row;
-        gap: 2.5em;
+        gap: 1.5em;
     }   
 
     .nav-section {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .nav-section:hover {
