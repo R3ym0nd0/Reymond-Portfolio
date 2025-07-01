@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <title>Reymond Joaquin</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="navigation-bar.css">
-        <link rel="icon" href="me.jpeg" type="image/jpeg">
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/me.PNG" type="PNG">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,8 +27,7 @@
                     <li><a class="nav-section" href="#home">HOME</a></li>
                     <li><a class="nav-section" href="#journey">JOURNEY</a></li>
                     <li><a class="nav-section" href="#skills">SKILLS</a></li>
-                    <li><a class="nav-section" onclick="alert('Projects section coming soon!')">PROJECTS</a></li>
-                    <li><a class="nav-section" onclick="alert('Writeups section coming soon!')">WRITEUPS</a></li>
+                    <li><a class="nav-section" href="#projects">PROJECTS</a></li>
                 </ul>    
             </div>
             <hr class="line">  
@@ -38,6 +37,7 @@
     <!-- Main Content -->
     <main>   
         <section id="hero">
+            
             <h1>Welcome!</h1>
     
             <div id="hero-desc">
@@ -67,7 +67,7 @@
         <section id="home">         
             <div id="introduction">
                 <h2 class="text">HI, I AM REYMOND!</h2>
-                <div id="my_profile"><img src="me.jpeg" id="my_pic" alt="Reymond's Photo"></div>
+                <div id="my_profile"><img src="images/me.PNG" id="my_pic" alt="Reymond's Photo"></div>
                 <h2 class="text">ASPIRING WEB PENTESTER</h2>
             </div>
 
@@ -91,6 +91,7 @@
             <h2 class="section-title">MY JOURNEY</h2>
 
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-date">Early 2023 – Curiosity Starts</div>
                     <div class="timeline-content">
@@ -187,7 +188,8 @@
                         Learning frontend (HTML, CSS, and JS). Practicing recon skills on TryHackMe and HackTheBox.
                     </div>
                 </div>
-                    <div class="timeline-item">
+
+                <div class="timeline-item">
                     <div class="timeline-date">Now – Continous Learning</div>
                     <div class="timeline-content">
                        <div class="design-container">
@@ -210,224 +212,384 @@
                         Building my portfolio as a project and sharpening my skills every day.
                     </div>
                 </div>
+
             </div> 
         </section> 
 
         <section id="skills">
             <h2 class="section-title">MY SKILLS</h2>
-            <div id="skills-container">
-                <div class="skill-category">
-                    <h3>Networking Fundamentals</h3>
-                    <ul>
-                        <div class="design-container">
-                            <div class="circle-container">
-                                <div class="circle-1"></div>
-                                <div class="circle-2"></div>
-                                <div class="circle-3"></div>
-                            </div>
 
-                            <span class="fake-terminal">
-                                rey@skills:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>
-                                <div>X</div>
-                            </div>
-                        </div>
-                        <li>
-                            OSI Model
-                            <span class="description">- Helps me understand how data flows theoretically</span>
-                        </li>
+                <div class="skills-container">
+                    <div class="skill-category">    
+                        <h3>Networking Fundamentals</h3>
+                        <ul>
+                            <li>
+                                OSI Model
+                                <span class="description">- Helps me understand how data flows theoretically</span>
+                            </li>
 
-                        <li>
-                            TCP/IP
-                            <span class="description">- Helps me understand and analyze packets in Wireshark</span>
-                        </li>
+                            <li>
+                                TCP/IP
+                                <span class="description">- Helps me understand and analyze packets in Wireshark</span>
+                            </li>
 
-                        <li>
-                            Subnetting
-                            <span class="description">- Helps me understand my target's network size and scan ranges</span>
-                        </li>
-                        <li>
-                            Topologies
-                            <span class="description">- Helps me understand the layout of networks</span>
-                        </li>
-                        <li>
-                            Network Devices
-                            <span class="description">- Helps me understand how network traffic flows behind the scenes</span>
-                        </li>
-                        <li>
-                            Protocols & Ports
-                            <span class="description">- Helps me understand services on my target to find potential entry points</span>
-                        </li>
-                    </ul>
+                            <li>
+                                Subnetting
+                                <span class="description">- Helps me understand my target's network size and scan ranges</span>
+                            </li>
+                            <li>
+                                Topologies
+                                <span class="description">- Helps me understand the layout of networks</span>
+                            </li>
+                            <li>
+                                Network Devices
+                                <span class="description">- Helps me understand how network traffic flows behind the scenes</span>
+                            </li>
+                            <li>
+                                Protocols & Ports
+                                <span class="description">- Helps me understand services on my target to find potential entry points</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Scripting & Programming</h3>
+                        <ul>
+                            <li>
+                                Bash scripting
+                                <span class="description">- Helps me automate tasks or chain tools into a single script</span>
+                            </li>
+                            <li>
+                                Python
+                                <span class="description">- Helps me automate tasks and build my own tools</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li>
+                                HTML
+                                <span class="description">- Helps me understand how websites are structured</span>
+                            </li>
+                            <li>
+                                CSS
+                                <span class="description">- Helps me understand web design and spot hidden elements or clickjacking</span>
+                            </li>
+                            <li>
+                                JavaScript
+                                <span class="description">- Helps me understand client-side behavior and how it can be abused</span>
+                            </li>  
+                            <li>
+                                HTTP/HTTPS
+                                <span class="description">- Helps me understand how the web communicates with the client behind the scenes</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Pentesting Tools</h3>
+                        <ul>
+                            <li>
+                                Nmap
+                                <span class="description">- Helps me discover open ports and gather information about my target</span>
+                            </li>
+                            <li>
+                                Wireshark
+                                <span class="description">- Helps me inspect and analyze network packets in real time</span>
+                            </li>
+                            <li>
+                                BurpSuite
+                                <span class="description">- Helps me inspect, modify, and analyze web requests and responses</span>
+                            </li>
+                            <li>
+                                Gobuster
+                                <span class="description">- Helps me brute-force web directories to find hidden or useful information</span>
+                            </li>
+                            <li>
+                                Wafw00f
+                                <span class="description">- Helps me quickly check if my target is using a WAF or not</span>
+                            </li>
+                            <li>
+                                cURL
+                                <span class="description">- Helps me modify requests, see the content of a file or page before downloading or clicking it</span>
+                            </li>
+                            <li>
+                                Netcat
+                                <span class="description">- Helps me listen on a port or connect to my target</span>
+                            </li>
+                            <li>
+                                Hydra
+                                <span class="description">- Helps me brute-force passwords efficiently on my target</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>OS & Tech Tools</h3>
+                        <ul>
+                            <li>
+                                Kali Linux
+                                <span class="description">- This is where I do all my pentesting since it has all the tools I need</span>
+                            </li>
+                            <li>
+                                Windows
+                                <span class="description">- This is where I do most of my coding because it runs fast and feels smooth</span>
+                            </li>
+                            <li>
+                                VSCode
+                                <span class="description">- My main editor for building, testing, and managing all my projects</span>
+                            </li>
+                            <li>
+                                Git & GitHub
+                                <span class="description">- This is where I manage versions and share all of my projects</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Scripting & Programming</h3>
-                    <ul>
-                        <div class="design-container">
-                            <div class="circle-container">
-                                <div class="circle-1"></div>
-                                <div class="circle-2"></div>
-                                <div class="circle-3"></div>
-                            </div>
+        </section>
 
-                            <span class="fake-terminal">
-                                rey@skills:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>
-                                <div>X</div>
-                            </div>
+        <section id="projects">
+            <h2 class="section-title">MINI PROJECTS</h2>
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <img src="images/IPnetSolver.PNG" alt="IPnetSolver Screenshot">
+
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
                         </div>
-                        <li>
-                            Bash scripting
-                            <span class="description">- Helps me automate tasks or chain tools into a single script</span>
-                        </li>
-                        <li>
-                            Python
-                            <span class="description">- Helps me automate tasks and build my own tools</span>
-                        </li>
-                    </ul>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>IPnetSolver v2.0</h3>
+
+                    <p>A tool written in Python for automating subnetting, including FLSM, VLSM, supernetting, and converting whole numbers/IP addresses to binary.</p>
+                    <p class="tech">Python | Subnetting</p>
+            
+                    <div class="project-links">
+                        <a href="https://github.com/R3ym0nd0/IPnetSolver/" target="_blank">View Source</a>
+                    </div>  
                 </div>
 
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <ul>
-                        <div class="design-container">
-                            <div class="circle-container">
-                                <div class="circle-1"></div>
-                                <div class="circle-2"></div>
-                                <div class="circle-3"></div>
-                            </div>
+                <div class="project-card">
+                    <img src="images/OpenPortHunter.PNG" alt="OpenPortHunter Screenshot">
 
-                            <span class="fake-terminal">
-                                rey@skills:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>
-                                <div>X</div>
-                            </div>
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
                         </div>
-                        <li>
-                            HTML
-                            <span class="description">- Helps me understand how websites are structured</span>
-                        </li>
-                        <li>
-                            CSS
-                            <span class="description">- Helps me understand web design and spot hidden elements or clickjacking</span>
-                        </li>
-                        <li>
-                            JavaScript
-                            <span class="description">- Helps me understand client-side behavior and how it can be abused</span>
-                        </li>  
-                        <li>
-                            HTTP/HTTPS
-                            <span class="description">- Helps me understand how the web communicates with the client behind the scenes</span>
-                        </li>
-                    </ul>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>OpenPortHunter v1.0</h3>
+                    <p>A tool written in Python that identifies open ports and provides WHOIS information for the target before scanning.</p>
+                    <p class="tech">Python | TCP/IP | Protocols | Ports</p>
+                    <div class="project-links">
+                        <a href="https://github.com/R3ym0nd0/OpenPortHunter" target="_blank">View Source</a>
+                    </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Pentesting Tools</h3>
-                    <ul>
-                        <div class="design-container">
-                            <div class="circle-container">
-                                <div class="circle-1"></div>
-                                <div class="circle-2"></div>
-                                <div class="circle-3"></div>
-                            </div>
+                <div class="project-card">
+                    <img src="images/WebDirsCovery.PNG" alt="WebDirsCovery Screenshot">
 
-                            <span class="fake-terminal">
-                                rey@skills:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>
-                                <div>X</div>
-                            </div>
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
                         </div>
-                        <li>
-                            Nmap
-                            <span class="description">- Helps me discover open ports and gather information about my target</span>
-                        </li>
-                        <li>
-                            Wireshark
-                            <span class="description">- Helps me inspect and analyze network packets in real time</span>
-                        </li>
-                        <li>
-                            BurpSuite
-                            <span class="description">- Helps me inspect, modify, and analyze web requests and responses</span>
-                        </li>
-                        <li>
-                            Gobuster
-                            <span class="description">- Helps me brute-force web directories to find hidden or useful information</span>
-                        </li>
-                        <li>
-                            Wafw00f
-                            <span class="description">- Helps me quickly check if my target is using a WAF or not</span>
-                        </li>
-                        <li>
-                            cURL
-                            <span class="description">- Helps me modify requests, see the content of a file or page before downloading or clicking it</span>
-                        </li>
-                        <li>
-                            Netcat
-                            <span class="description">- Helps me listen on a port or connect to my target</span>
-                        </li>
-                        <li>
-                            Hydra
-                            <span class="description">- Helps me brute-force passwords efficiently on my target</span>
-                        </li>
-                    </ul>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>WebDirsCovery v1.0</h3>
+                    <p>A tool written in Python that automates the process of finding hidden directories on websites.</p>
+                    <p class="tech">Python | HTTP/HTTPS</p>
+                    <div class="project-links">
+                        <a href="https://github.com/R3ym0nd0/WebDirsCovery" target="_blank">View Source</a>
+                    </div>
+
                 </div>
 
-                <div class="skill-category">
-                    <h3>Environment & Tech Tools</h3>
-                    <ul>
-                        <div class="design-container">
-                            <div class="circle-container">
-                                <div class="circle-1"></div>
-                                <div class="circle-2"></div>
-                                <div class="circle-3"></div>
-                            </div>
+                <div class="project-card">
+                    <img src="images/AutoWebRecon.PNG" alt="AutoWebRecon Screenshot">
 
-                            <span class="fake-terminal">
-                                rey@skills:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>
-                                <div>X</div>
-                            </div>
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
                         </div>
-                        <li>
-                            Kali Linux
-                            <span class="description">- This is where I do all my pentesting since it has all the tools I need</span>
-                        </li>
-                        <li>
-                            Windows
-                            <span class="description">- This is where I do most of my coding because it runs fast and feels smooth</span>
-                        </li>
-                        <li>
-                            VSCode
-                            <span class="description">- My main editor for building, testing, and managing all my projects</span>
-                        </li>
-                        <li>
-                            Git & GitHub
-                            <span class="description">- This is where I manage versions and share all of my projects</span>
-                        </li>
-                    </ul>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>AutoWebRecon v1.0</h3>
+                    <p>A tool written in Bash script for automating website reconnaissance using built-in Kali tools.</p>
+                    <p class="tech">Bash | Kali Linux | Reconnaissance</p>
+                    <div class="project-links">
+                        <a href="https://github.com/R3ym0nd0/AutoWebRecon" target="_blank">View Source</a>
+                    </div>
+                </div> 
+                
+                <div class="project-card">
+                    <img src="images/WebPortfolio.png" alt="WebPortfolio Screenshot">
+
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>My Website Portfolio v0.4.0</h3>
+                    <p>This website itself! I built from scratch to share my journey, skills, projects and writeups.</p>
+                    <p class="tech">HTML | CSS | JavaScript</p>
+                    <div class="project-links">
+                        <a href="https://github.com/R3ym0nd0/r3ym0nd0.github.io" target="_blank">View Source</a>
+                    </div>
                 </div>
+
+                <div class="project-card">
+                    <img src="images/ReycademyChannel.png" alt="Reycademy Channel Screenshot">
+
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>Reycademy Channel</h3>
+                    <p>A channel I created to share my knowledge in ethical hacking and help my fellow Filipinos learn ethical hacking.</p>
+                    <p class="tech">Teaching | Presenting | Content Creation</p>
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/@reycademy" target="_blank">Coming Soon</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/blackBackground.PNG" alt="HTTPayload Screenshot">
+
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>HTTPayload</h3>
+                    <p>Written in Python that generates stealthy payloads for web attacks using encoding techniques and request obfuscation.</p>
+                    <p class="tech">Python | HTTP/HTTPS | OWASP Top 10</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Coming Soon</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/blackBackground.PNG" alt="Reycademy Website Screenshot">
+
+                    <div class="design-container">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <span class="fake-terminal">
+                            rey@projects:~$
+                        </span>
+                        
+                        <div class="fake-controls">
+                            <div>—</div>
+                            <div>☐</div>
+                            <div>X</div>
+                        </div>
+                    </div>
+
+                    <h3>Reycademy Website</h3>
+                    <p>A platform for my YouTube channel where each video has its own quiz.</p>
+                    <p class="tech">HTML | CSS | JavaScript</p>
+                    <div class="project-links">
+                        <a href="#">Coming Soon</a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>  
@@ -454,10 +616,10 @@
 
         <div id="footer-info">
             <p>&copy 2025 Reymond Joaquin. All rights reserved.</p>
-            <p>v0.3.1 | Built with HTML, CSS, & JavaScript</p>
+            <p>v0.4.0 | Built with HTML, CSS, & JavaScript</p>
             <p>Design by Reymond Joaquin | Icons by <a href="https://fontawesome.com" target="_blank">FontAwesome</a></p>
         </div>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
