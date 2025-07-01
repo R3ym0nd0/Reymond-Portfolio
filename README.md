@@ -8,13 +8,13 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 📸 Screenshot
 
 ### DESKTOP
-(soon)
+![Desktop_Portfolio](https://github.com/user-attachments/assets/cb0ffd4e-f567-421b-b1e9-a4433a30fac5)
 
 ### TABLET
-(soon)
+![Tablet_Portfolio](https://github.com/user-attachments/assets/e319b8f2-9f02-41b2-a4af-8ec23bc7c3eb)
 
 ### MOBILE
-(soon)
+![Mobile_Portfolio](https://github.com/user-attachments/assets/36d71952-de18-4cbf-b0db-56841c20ff10)
 
 ---
 
