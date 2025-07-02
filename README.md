@@ -1,6 +1,6 @@
-# Website Portfolio v0.3.1
+# Website Portfolio v0.4.0
 
-Welcome to version 0.3.1 of my personal website portfolio!  
+Welcome to version 0.4.0 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
@@ -20,11 +20,10 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ## 📌 What's New
 
-- ✅ Added **Skills Section**
-- ✅ Improved **Journey Section** design
-- ✅ Fixed **Navbar scroll bug** (sections now scroll to full view correctly)
-- ✅ Updated styling in the **Home Section**
-  - Changed color and size of the "Download Resume" and "Contact Me" buttons
+- ✅ Added **Projects Section**
+- ✅ Change **Skills Section** design
+- ✅ Improve **Journey Section** design
+  
 ---
 
 ## 🛠️ Built With
@@ -37,7 +36,6 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ## 🚧 Limitations
 
-- **Projects** and **Writeups** sections are still placeholders
 - **Resume** button is not functional yet
 - Still lacks **animations** or **interactive enhancements**
 - **In-app browsers** (like Facebook browser or Snaptube) may display layout issues
