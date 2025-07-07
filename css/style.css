@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight:lighter;
 }
 
 html {
@@ -16,10 +17,11 @@ body {
     flex-direction: column;  
     height: 100%;
     
-    font-family: sans-serif;
+    font-family: 'Segoe UI';
 
-    background-color: black;  
+    background-color: rgb(15, 15, 15);
     scroll-behavior: smooth; 
+    user-select: none;
 }
 
 /* MAIN SECTION */
@@ -38,7 +40,7 @@ main {
     min-height: 100vh;
 
     font-size: clamp(0.875rem, 8vw, 4rem);
-    color: white;
+    color: rgb(57, 167, 211);
     text-align: center;
     font-family: sans-serif;
 }
@@ -48,13 +50,15 @@ main {
 }
 
 #hero h1{
-    font-size: clamp(0.875rem, 15vw, 5rem);
+    font-size: clamp(0.875rem, 9vw, 5rem);
+    font-weight: lighter;
 }
 
 #hero p{
     max-width: 800px;
 
     font-size: clamp(0.600rem, 3.5vw, 1.5rem);
+    color: white;
     text-align: center;
 }
 
@@ -76,6 +80,7 @@ main {
 }
 
 /* HOME SECTION */
+
 #home {
     display: flex;
     flex-direction: column;
@@ -83,7 +88,7 @@ main {
     align-items: center;
     padding: 4em 1em 4em 1em;
 
-    background-color: tomato;
+    background-color: rgb(30, 30, 30);
 }
 
 #introduction {
@@ -105,8 +110,8 @@ main {
     max-width: 200px;
     
     font-size: clamp(0.600rem, 10vw, 3rem);  
-    font-family: monospace, sans-serif;
-    color: black;
+    font-weight:lighter;
+    color: white;
 }
 
 #my_pic {
@@ -115,8 +120,6 @@ main {
     
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid black; 
-    box-shadow: 0px 0px 5px black;
 }
 
 #description {
@@ -124,7 +127,7 @@ main {
     margin: 1.8em;
     margin-bottom: 2em;
 
-    color: black;
+    color: white;
     font-size: clamp(0.600rem, 2vw, 1rem);
     line-height: 2em;
     text-align: center; 
@@ -147,7 +150,7 @@ main {
     
     border: 3px solid white;
     border-radius: 30px;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
 }
 
 #contact-btn a {
@@ -156,7 +159,7 @@ main {
 }
 
 #contact-btn:hover {
-    background-color: rgb(44, 41, 41);
+    background-color: rgb(29, 28, 28);
 }
 
 #resume-btn{
@@ -167,9 +170,9 @@ main {
     font-weight: bold;
     color: black;
     
+    background-color: rgb(57, 167, 211);
     border: 3px solid black;
     border-radius: 30px;
-    background-color: white;
 }
 
 #resume-btn a{
@@ -178,32 +181,29 @@ main {
 }
 
 #resume-btn:hover {
-    background-color: rgb(175, 165, 165);
+    background-color: rgb(42, 148, 190);
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
+
+    color: rgb(57, 167, 211);
 }
 
 /* JOURNEY SECTION */
 #journey {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+    padding: 40px 5%;
 
-    background-color: rgb(241, 72, 43);
-    
+    background-color: rgb(15, 15, 15);
 }
 
 .timeline {
     position: relative;
 
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    border-left: 2px solid rgb(57, 167, 211);
+    border-right: 2px solid rgb(57, 167, 211);
 }
 
 .timeline::before {
@@ -212,9 +212,9 @@ main {
     left: -9px;
     top: 0;
     height: 100%;
-    width: 3px;
+    width: 2px;
 
-    background-color: black;
+    background-color: rgb(57, 167, 211);
 }
 
 .timeline::after {
@@ -223,9 +223,9 @@ main {
     right: -9px;
     top: 0;
     height: 100%;
-    width: 3px;
+    width: 2px;
 
-    background-color: black;
+    background-color: rgb(57, 167, 211);
 }
 
 .timeline-item {
@@ -246,7 +246,7 @@ main {
     background-color: black;
 
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid rgb(57, 167, 211);
     box-shadow: 0 0 0 2px black;
 }
 
@@ -262,39 +262,43 @@ main {
     background-color: black;
 
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid rgb(57, 167, 211);
     box-shadow: 0 0 0 2px black;
 }
 
 .timeline-date {
     margin-bottom: 8px;
     padding-bottom: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid white;
 
-    font-weight: bold;
-    color: black;
+    font-size: 1.1rem;
+    color: white;
 }
 
 .timeline-content { 
-    padding: 15px 20px;
+    padding: 5px 10px 15px;
 
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     color: white;
+    text-align: center;
+    font-weight: lighter;
 
-    border-left: 10px solid white;
-    border-right: 10px solid white;
+    border-left: 10px solid rgb(57, 167, 211);
+    border-right: 10px solid rgb(57, 167, 211);
+    border-bottom: 2px solid rgb(57, 167, 211);
     border-radius: 10px;
 }
 
 .design-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 10px;
 
     color: white;
     
-    border-bottom: 1px solid rgb(100, 98, 98);
+    border-bottom: 1px solid rgb(57, 167, 211);
 }
 
 .circle-container {
@@ -342,25 +346,18 @@ main {
 
 /* SKILLS SECTION */
 #skills {
-    padding: 40px 20px;  
-    
-    color: black;
+    padding: 40px 5%;  
 
-    background-color: tomato;
-}
-
-.skill-category {
-    margin: auto;
-    max-width: 56em;
+    background-color: rgb(30, 30, 30);
 }
 
 .skill-category h3 {
     padding-bottom: 8px;
 
     font-size: 1.5rem;
-    color: black;
+    color: white;
 
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid white;
 }
 
 .skill-category ul { 
@@ -372,16 +369,16 @@ main {
 
 .skill-category ul li {
     padding: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     
     color: white;
     font-weight: bold;
 
-    background-color: black;
-    border-left: 10px solid white;
-    border-right: 10px solid white;
+    background-color: rgb(15, 15, 15);
+    border-left: 10px solid rgb(57, 167, 211);
+    border-right: 10px solid rgb(57, 167, 211);
+    border-bottom: 1px solid rgb(57, 167, 211);
     border-radius: 6px;
-    box-shadow: 2px 2px 2px black;
 } 
 
 .description {
@@ -390,20 +387,18 @@ main {
 
 .skill-category ul li:hover .description{
     display: inline;
-    
-    font-weight: normal;
 }
 
 .skill-category ul li:hover {
-    border: 2px solid white;
+    border: 2px solid rgb(57, 167, 211);
     background-color: rgb(34, 32, 32);
     text-align: center;
 }
 
 /* PROJECTS SECTION */
 #projects {
-    background-color: rgb(241, 72, 43);
-    padding: 40px 20px;
+    background-color: rgb(15, 15, 15);
+    padding: 40px 5%;
     text-align: center;
 }
 
@@ -416,8 +411,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    max-width: 55.625rem;
-    margin: 0 auto;
 }
 
 .projects-container h3 {
@@ -432,12 +425,11 @@ main {
 .project-card {
     margin-bottom: 0.875rem;
 
-    background-color:black;
+    background-color:rgb(30, 30, 30);
     color: white;
     
-    border: 2px solid white;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px black;
+    border: 3px solid rgb(57, 167, 211);
+    border-radius: 10px;
 }
 
 .project-card img {
@@ -446,7 +438,7 @@ main {
     border-top-right-radius: 10px;
     height: 25vh;
     object-fit: fill;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgb(57, 167, 211);
 }
 
 .project-card h3 {
@@ -486,12 +478,80 @@ main {
     color: black;
     font-weight: bold;
 
-    background-color: white; 
+    background-color: rgb(57, 167, 211); 
     border-radius: 8px;
 }
 
 .project-links a:hover {
-    background-color: rgb(168, 159, 159);
+    background-color: rgb(42, 148, 190);
+}
+
+
+#reymux {
+    padding: 40px 5%;
+
+    background-color: rgb(30, 30, 30);
+}
+
+#terminal-container {
+    height: 500px;
+    width: 1250x;
+    padding: 0 5px;
+    margin: auto;
+    overflow: auto;
+
+    font-size: 0.875rem;
+    color: lime;
+    font-family: monospace;
+
+    background-color: rgb(15, 15, 15);
+    border-radius: 15px;
+    border: 3px solid rgb(57, 167, 211);
+    cursor: pointer;
+}
+
+#menu-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(57, 167, 211);
+}
+
+#terminal-container p {
+    margin-bottom: 20px;
+}
+
+#output-container > * {
+    margin-bottom: 10px;
+    font-size: 0.775rem;
+}
+
+#output-container #asii {
+    white-space: pre-wrap;  
+    max-width: 100%;
+    font-size: clamp(0.500rem, 1vw, 2rem);
+    
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    white-space: pre; /* or just 'pre' */
+}
+
+#input-container #prompt {
+    padding-right: 10px;
+}
+
+#terminal-input {
+    width: 100%;
+
+    color: lime;
+
+    background-color: rgb(15, 15, 15);
+    outline: none;
+    border: none;
 }
 
 /* FOOTER SECTION */
@@ -505,7 +565,7 @@ footer {
     text-align: center;
     color: white;   
 
-    background-color: black; 
+    background-color: rgb(15, 15, 15); 
 }
 
 #footer-info {
@@ -521,10 +581,25 @@ footer a{
     text-decoration: none;
 }
 
-@media (max-width: 300px) {
-    * {
-        display: none;
-    };
+@media (max-width: 301px) {
+  body::before {
+    content: "You can't view my portfolio at 301px or less. Enjoy the void :)";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+    background: black;
+  }
+
+  body > * {
+    display: none;
+  }
 }
 
 @media (min-width: 448px) {
@@ -556,39 +631,11 @@ footer a{
     }
 
     #contact-btn{
-        width: 12.5em;
-        padding:  0.380em;
-
         font-size: 1rem;
-        font-weight: bold;
-        color: white;
-        
-        border: 3px solid white;
-        border-radius: 30px;
-        background-color: black;
-    }
-
-    #contact-btn a {
-        color: white;
-        text-decoration: none;
     }
 
     #resume-btn{
-        width: 12.5em;
-        padding: 0.380em;
-
         font-size: 1rem;
-        font-weight: bold;
-        color: black;
-        
-        border: 3px solid black;
-        border-radius: 30px;
-        background-color: white;
-    }
-
-    #resume-btn a{
-        color: black;
-        text-decoration: none;
     }
 }
 
@@ -618,7 +665,7 @@ footer a{
     }
 
     #hero h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     /* INFORMATION SECTION */
