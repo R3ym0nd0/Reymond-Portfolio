@@ -185,10 +185,14 @@ terminalInput.addEventListener("keydown", (e) => {
         
         // Create new output lines
         const childOutput =  document.createElement("div") // Parent of the commandLine and responseLine
+
         const commandLine = document.createElement("div"); // Create <div></div>
         commandLine.innerHTML = `<span>$</span> ${command}`; // <div>$</span></div>
+        commandLine.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+
         const responseLine = document.createElement("div"); // Create another <div></div> 
         responseLine.style.whiteSpace = "pre-wrap";
+        responseLine.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
 
         // List of command functions
         const commands = {
