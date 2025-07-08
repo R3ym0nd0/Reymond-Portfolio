@@ -531,10 +531,15 @@ main {
     font-size: clamp(0.500rem, 2vw, 1rem);    
 }
 
+#output-container #hint {
+   font-size: clamp(0.700rem, 2vw, 0.800rem);  
+}
+
 #input-container {
     display: flex;
     align-items: center;
-    white-space: pre; /* or just 'pre' */
+    white-space: pre;
+    font-size: clamp(0.700rem, 2vw, 0.800rem); 
 }
 
 #input-container #prompt {
