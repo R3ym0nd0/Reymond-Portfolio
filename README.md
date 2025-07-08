@@ -1,6 +1,6 @@
-# Website Portfolio v1.0.0
+# Website Portfolio v1.0.1
 
-Welcome to version 1.0.0 of my personal website portfolio!  
+Welcome to version 1.0.1 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
