@@ -499,7 +499,7 @@ main {
     margin: auto;
     overflow: auto;
 
-    font-size: 0.875rem;
+    font-size: 0.775rem;
     color: lime;
     font-family: monospace;
 
@@ -526,7 +526,7 @@ main {
     font-size: 0.775rem;
 }
 
-#output-container #asii {
+#output-container #reymux-info {
     white-space: pre-wrap;  
     max-width: 100%;
     font-size: clamp(0.500rem, 3vw, 0.800rem);    
