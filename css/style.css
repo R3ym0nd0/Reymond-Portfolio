@@ -523,13 +523,12 @@ main {
 
 #output-container > * {
     margin-bottom: 10px;
-    font-size: 0.775rem;
+    font-size: 0.700rem;
 }
 
 #output-container #reymux-info {
     white-space: pre-wrap;  
     max-width: 100%;
-    font-size: clamp(0.500rem, 3vw, 0.800rem);    
 }
 
 #input-container {
