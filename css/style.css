@@ -13,6 +13,8 @@ html {
     scroll-behavior: smooth; 
     scrollbar-width: none; /*For Firefox to hide scroll bar*/
     -ms-overflow-style: none;  /*For Old IE / Edge to  hide scroll bar*/
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -24,6 +26,7 @@ body {
     flex-direction: column;  
     height: 100%;
     
+    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Segoe UI';
 
     background-color: rgb(15, 15, 15);
@@ -48,7 +51,6 @@ main {
     font-size: clamp(0.875rem, 8vw, 4rem);
     color: rgb(57, 167, 211);
     text-align: center;
-    font-family: sans-serif;
 }
 
 #hero > * {
@@ -62,23 +64,26 @@ main {
 #hero p{
     max-width: 800px;
 
-    font-size: clamp(0.600rem, 3.5vw, 1.5rem);
+    font-size: clamp(0.700rem, 3.9vw, 1.5rem);
     color: rgb(189, 185, 185);
     text-align: center;
 }
 
 #start-button {
-    padding: 10px;
+    padding: 15px;
 
-    font-size: clamp(0.600rem, 1.1rem, 1.3rem);
+    font-size: 0.700rem;
+    font-size: clamp(0.700rem, 1rem, 1.3rem);
     text-decoration: none;
-    color: rgb(15, 15, 15);
+    color: rgb(57, 167, 211);
 
-    background-color: rgb(57, 167, 211);
-    border-radius: 5px;
+    background-color: rgb(15, 15, 15);
+    border: 1px solid rgb(57, 167, 211);
+    border-radius: 10px;
 }
 
 #start-button:hover {
+    color: rgb(15, 15, 15);
     background-color: rgb(42, 148, 190);
 }
 
@@ -101,7 +106,7 @@ main {
 
 /* HOME SECTION */
 
-#home {
+#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,17 +170,13 @@ main {
     padding:  0.380em;
 
     font-size: clamp(0.300rem, 4vw, 1.5rem);
-    font-weight: bold;
     color: white;
+    text-align: center;
+    text-decoration: none;
     
     border: 3px solid white;
     border-radius: 30px;
     background-color: rgb(15, 15, 15);
-}
-
-#contact-btn a {
-    color: white;
-    text-decoration: none;
 }
 
 #contact-btn:hover {
@@ -187,17 +188,13 @@ main {
     padding: 0.380em;
 
     font-size: clamp(0.300rem, 4vw, 1.5rem);
-    font-weight: bold;
     color: black;
+    text-align: center;
+    text-decoration: none;
     
     background-color: rgb(57, 167, 211);
     border: 3px solid black;
     border-radius: 30px;
-}
-
-#resume-btn a{
-    color: black;
-    text-decoration: none;
 }
 
 #resume-btn:hover {
@@ -531,6 +528,14 @@ main {
     scrollbar-width: none;
 }
 
+#terminal-controls {
+    background-color: rgb(15, 15, 15);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+}
+
 #menu-bar {
     display: flex;
     gap: 20px;
@@ -543,6 +548,11 @@ main {
     margin-bottom: 20px;
 }
 
+#output-container {
+    font-size: 0.700rem;  
+    font-size: clamp(0.700rem, 2vw, 0.900rem); 
+}
+
 #output-container > * {
     margin-bottom: 10px;
 }
@@ -550,17 +560,13 @@ main {
 #output-container #ascii {
     white-space: pre-wrap;  
     max-width: 100%;
-    font-size: clamp(0.500rem, 2vw, 1rem);    
-}
-
-#output-container #hint {
-   font-size: clamp(0.700rem, 2vw, 0.800rem);  
 }
 
 #input-container {
     display: flex;
     align-items: center;
     white-space: pre;
+    font-size: 0.700rem;
     font-size: clamp(0.700rem, 2vw, 0.800rem); 
 }
 
@@ -571,6 +577,9 @@ main {
 #terminal-input {
     width: 100%;
 
+    font-size: 0.700rem;
+    font-size: clamp(0.700rem, 2vw, 0.900rem); 
+    
     color: lime;
 
     background-color: rgb(15, 15, 15);

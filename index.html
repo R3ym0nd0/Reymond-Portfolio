@@ -10,7 +10,6 @@
 
         <!-- External Links -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     </head>
 <body>
     <!-- Navigation Bar -->
@@ -24,7 +23,7 @@
             <hr class="line">
             <div id="nav-bar">
                 <ul>
-                    <li><a class="nav-section" href="#home">HOME</a></li>
+                    <li><a class="nav-section" href="#about">ABOUT</a></li>
                     <li><a class="nav-section" href="#journey">JOURNEY</a></li>
                     <li><a class="nav-section" href="#skills">SKILLS</a></li>
                     <li><a class="nav-section" href="#projects">PROJECTS</a></li>
@@ -38,14 +37,13 @@
     <!-- Main Content -->
     <main>   
         <section id="hero">
-            <h1>Discover Who I Am</h1>
+            <h1>Web Security Enthusiast</h1>
     
             <div id="hero-desc">
-                <p>This is where I share my <strong>journey</strong>, <strong>skills</strong>, and <strong>projects</strong> as an aspiring</p>
-                <p><strong>web application penetration tester</strong></p>
+                <p>Did you know that websites are prime targets for cyber attacks? Let’s secure them the offensive way!</p>
             </div>   
 
-            <a href="#home" id="start-button">Start Exploring</a>
+            <a href="#about" id="start-button">Start Exploring</a>
 
             <div id="profile-links">   
                 <a href="https://www.linkedin.com/in/reymond-joaquin-3b5954308" target="_blank">
@@ -66,7 +64,7 @@
             </div>
         </section>
 
-        <section id="home">         
+        <section id="about">         
             <div id="introduction">
                 <h2 class="text">HI, I AM REYMOND!</h2>
                 <div id="my_profile"><img src="images/me.PNG" id="my_pic" alt="Reymond's Photo"></div>
@@ -79,13 +77,10 @@
             </div> 
 
             <div id="hero-contact-search">
-                <button id="contact-btn">
-                    <a href="https://www.linkedin.com/in/reymond-joaquin-3b5954308" target="_blank">Contact Me</a>
-                </button>
-
-                <button id="resume-btn">
-                    <a href="https://www.youtube.com/watch?v=zL19uMsnpSU&list=RDzL19uMsnpSU&start_radio=1" target="_blank">Resume</a>
-                </button>
+               
+                <a href="https://www.linkedin.com/in/reymond-joaquin-3b5954308" target="_blank" id="contact-btn">Contact Me</a> 
+                <a id="resume-btn" onclick="alert('My resume is under very serious development. Please stand by forever. Or maybe 2028. I\'m just tryna graduate rn 😭')">Resume</a>
+                
             </div>
         </section> 
 
@@ -163,7 +158,7 @@
                                 <div class="circle-3"></div>
                             </div>
                         </div>
-                        Building my portfolio as a project and sharpening my skills every day.
+                        Building my portfolio as a project and improving my skills every day.
                     </div>
                 </div>
 
@@ -450,7 +445,7 @@
                         </div>
                     </div>
 
-                    <h3>My Website Portfolio v1.0.0</h3>
+                    <h3>My Website Portfolio v1.0.4</h3>
                     <p>This website itself! I built from scratch to share my journey, skills, and projects.</p>
                     <p class="tech">HTML | CSS | JavaScript</p>
                     <div class="project-links">
@@ -551,43 +546,45 @@
             <h2 class="section-title">REYMUX</h2>
             <label for="terminal-input">
                 <div id="terminal-container">
-                    <div class="design-container" style="border: none; margin: 0;">
-                            <div class="circle-container">
-                                <img src="images/terminal.png" width="35px" height="25px" style="border: 2px solid rgb(57, 167, 211);">
-                            </div>
+                    <div id="terminal-controls">
+                        <div class="design-container" style="border: none; margin: 0;">
+                                <div class="circle-container">
+                                    <img src="images/terminal.png" width="35px" height="25px" style="border: 2px solid rgb(57, 167, 211);">
+                                </div>
 
-                            <span id="prompt">
-                                /㉿reymux:~$
-                            </span>
-                            
-                            <div class="fake-controls">
-                                <div>—</div>
-                                <div>☐</div>   
-                                <div>X</div>
-                            </div>
-                    </div>
+                                <span id="prompt">
+                                    /㉿reymux:~$
+                                </span>
+                                
+                                <div class="fake-controls">
+                                    <div>—</div>
+                                    <div>☐</div>   
+                                    <div>X</div>
+                                </div>
+                        </div>
 
-                    <div id="menu-bar">
-                        <strong>File</strong>
-                        <strong>Action</strong>
-                        <strong>Edit</strong>
-                        <strong>View</strong>
-                        <strong>Help</strong>
+                        <div id="menu-bar">
+                            <strong>File</strong>
+                            <strong>Action</strong>
+                            <strong>Edit</strong>
+                            <strong>View</strong>
+                            <strong>Help</strong>
+                        </div>
                     </div>
 
                     <div id="output-container">
                         <pre id="ascii">
-    (                               
-    )\ )                            
-    (()/(  (  (       )     (     )  
-    /(_))))\ )\ )   (     ))\ ( /(  
-    (_)) /((_|()/(   )\  '/((_))\()) 
-    | _ (_))  )(_))_((_))(_))(((_)\  
-    |   / -_)| || | '  \() || \ \ /  
-    |_|_\___| \_, |_|_|_| \_,_/_\_\  
-              |__/                   
-            
-            ~$ Browse my portfolio by typing commands...
+(                               
+)\ )                            
+(()/(  (  (       )     (     )  
+/(_))))\ )\ )   (     ))\ ( /(  
+(_)) /((_|()/(   )\  '/((_))\()) 
+| _ (_))  )(_))_((_))(_))(((_)\  
+|   / -_)| || | '  \() || \ \ /  
+|_|_\___| \_, |_|_|_| \_,_/_\_\  
+          |__/                   
+        
+        ~$ Browse my portfolio by typing commands...
                         </pre>
                         <p id="hint">[+] Type 'help' to see available commands.</p>
                     </div>
@@ -624,7 +621,7 @@
 
         <div id="footer-info">
             <p>&copy 2025 Reymond Joaquin. All rights reserved.</p>
-            <p>v1.0.3 | Built with HTML, CSS, & JavaScript</p>
+            <p>v1.0.4 | Built with HTML, CSS, & JavaScript</p>
             <p>Design by Reymond Joaquin | Icons by <a href="https://fontawesome.com" target="_blank">FontAwesome</a></p>
         </div>
     </footer>

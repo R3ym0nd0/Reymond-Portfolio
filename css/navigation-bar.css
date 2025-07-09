@@ -21,6 +21,7 @@ nav {
 #name {
     color: white;
     font-size: 1rem;
+    font-weight: lighter;
 }
 
 #name:hover {
