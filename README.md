@@ -1,6 +1,6 @@
-# Website Portfolio v1.0.2
+# Website Portfolio v1.0.3
 
-Welcome to version 1.0.2 of my personal website portfolio!  
+Welcome to version 1.0.3 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
@@ -8,21 +8,20 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 📸 Screenshot
 
 ### DESKTOP
-![Desktop_Portfolio](https://github.com/user-attachments/assets/7d65f9a9-a3ca-4c54-956d-938587689584)
+![Desktop_Portfolio](https://github.com/user-attachments/assets/fe050997-f8ae-4d69-9d12-bed3670120ed)
 
 ### TABLET
-![Tablet_Portfolio](https://github.com/user-attachments/assets/8123ed04-2e13-4d39-984a-c96b10125101)
+![Tablet_Portfolio](https://github.com/user-attachments/assets/8914c89f-7e37-497b-bca1-24c3fa5bf657)
 
 ### MOBILE
-![Mobile_Portfolio](https://github.com/user-attachments/assets/978e62e6-eaeb-4cbb-8d5b-fcb9579d7006)
+![Mobile_Portfolio](https://github.com/user-attachments/assets/01f55d2c-ca64-4d45-811a-c39dc537d473)
 
 ---
 
 ## 📌 What's New
 
-- ✅ Full UI overhaul (switched from Tomato theme to Dark Gray theme)
-- ✅ Updated font for improved readability
-- ✅ Added **Reymux** section (includes ASCII art)
+- ✅ Hide Scroll Bar
+- ✅ Added **Start Exploring** button
   
 ---
 
