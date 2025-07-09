@@ -189,20 +189,20 @@ function rootAccess(responseLine, folder) {
     const maxAttempts = 3;
 
     const password = document.createElement("input");
+    password.id = "password-input";
     password.type = "password";
     password.style.backgroundColor = "rgb(15, 15, 15)";
     password.style.border = "none";
     password.style.outline = "none";
     password.style.color = "lime";
     password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
-    password.autofocus = true; // for mobile
 
     // Clear and show prompt
     responseLine.textContent = "[sudo] password for root (find the root password!): ";
     responseLine.appendChild(password);
 
     // Force focus the password input
-    setTimeout(() => password.focus(), 2);
+    setTimeout(() => password.focus(), 10);
 
     password.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
@@ -223,7 +223,7 @@ function rootAccess(responseLine, folder) {
                 } else {
                     responseLine.textContent = `[sudo] password for root (attempt ${attempts}/${maxAttempts}): `;
                     responseLine.appendChild(password);
-                    setTimeout(() => password.focus(), 2);
+                    setTimeout(() => password.focus(), 10);
                 }
             }
         }
@@ -286,7 +286,7 @@ Deleting script.js
 
 ⚠👁 NICE TRY. NOW FACE THE CONSEQUENCE OF YOUR CURIOSITY 👁⚠
 
-"The #1 vulnerability isn’t in the system — it’s YOU."`;
+Lesson Learned: The #1 vulnerability isn’t in the system — it’s YOU.`;
             // Auto-redirect to Rick Roll after short delay
             setTimeout(() => {
                 window.location.href = "https://www.youtube.com/watch?v=zL19uMsnpSU&list=RDzL19uMsnpSU&start_radio=1";
