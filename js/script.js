@@ -31,5 +31,5 @@ if (ua.includes("fbav") || ua.includes("instagram")) {
   document.body.insertAdjacentElement("afterbegin", notice);
 
   // Auto remove after 5 seconds
-  setTimeout(() => notice.remove(), 5000);
+  setTimeout(() => notice.remove(), 10000);
 }
