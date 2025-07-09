@@ -59,16 +59,18 @@ Description: I'm a BSIS student and an aspiring Web Penetration Tester with a pa
         },
 
         "Projects": {
-            "IPnetSolver.sh"      : "A tool written in Python for automating subnetting, including FLSM, VLSM, supernetting, and converting whole numbers/IP addresses to binary.",
-            "OpenPortHunter.sh"   : "A tool written in Python that identifies open ports and provides WHOIS information for the target before scanning.",
-            "WebDirsCovery.sh"    : "A tool written in Python that automates the process of finding hidden directories on websites.",
-            "AutoWebRecon.sh"     : "A tool written in Bash script for automating website reconnaissance using built-in Kali tools.",
-            "Personal_Website.sh" : "This website itself! I built from scratch to share my journey, skills, projects and writeups."
+            "IPnetSolver.txt"      : "A tool written in Python for automating subnetting, including FLSM, VLSM, supernetting, and converting whole numbers/IP addresses to binary.",
+            "OpenPortHunter.txt"   : "A tool written in Python that identifies open ports and provides WHOIS information for the target before scanning.",
+            "WebDirsCovery.txt"    : "A tool written in Python that automates the process of finding hidden directories on websites.",
+            "AutoWebRecon.txt"     : "A tool written in Bash script for automating website reconnaissance using built-in Kali tools.",
+            "Personal_Website.txt" : `This website itself! I built from scratch to share my journey, skills, projects and writeups.
+
+root password: @))%w0w_d1dY0uJust*f1nDth1s@))%`
         }
     },
     
     "root" : {
-        "flag.txt" : "323j2n321j3b1232knskd11msls (this is just a random letters and numbers lol)"
+        "flag.txt" : "flag{y0u_f0und_th3_r00t_pw_c0ngr4tul4t10ns!}"
     }
 };
 
@@ -95,6 +97,8 @@ function handleCD(command, responseLine) {
     if (folder in dir) {
         if (specificFile === "txt") {
             responseLine.textContent = `cd: not a directory: ${folder}`;
+        } else if (folder === "root") {
+            rootAccess(responseLine, folder);
         } else {
             // go inside folder("Projects")
             currentPath.push(folder); 
@@ -124,7 +128,13 @@ function handleLS(responseLine) {
 
 function handleHELP(responseLine) {
     responseLine.textContent = 
-    `Available commands:
+    `This terminal is a fully simulated environment built in JavaScript.
+No commands are executed on your system.
+No data is tracked, collected, or stored.
+
+This experience is for fun and education only
+    
+Available commands:
 
 Navigation:
     - pwd            Show current path
@@ -139,7 +149,8 @@ File Handling:
 System:
     - whoami         Show current user  
     - clear          Clear the terminal
-    - help           Show this help menu`;
+    - help           Show this help menu
+    - sudo rm -rf    Deletes Everything (Not Recommended)`;
 };
 
 function handleCLEAR(outputContainer) {
@@ -173,6 +184,52 @@ function updatePrompt() {
     promptSpan.textContent = `${user}㉿reymux:~$`;
 };
 
+function rootAccess(responseLine, folder) {
+    let attempts = 0;
+    const maxAttempts = 3;
+
+    const password = document.createElement("input");
+    password.type = "password";
+    password.style.backgroundColor = "rgb(15, 15, 15)";
+    password.style.border = "none";
+    password.style.outline = "none";
+    password.style.color = "lime";
+    password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+    password.autofocus = true; // for mobile
+
+    // Clear and show prompt
+    responseLine.textContent = "[sudo] password for root (find the root password!): ";
+    responseLine.appendChild(password);
+
+    // Force focus the password input
+    setTimeout(() => password.focus(), 2);
+
+    password.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            const pass = password.value;
+            password.value = "";
+
+            if (pass === "@))%w0w_d1dY0uJust*f1nDth1s@))%") {
+                responseLine.textContent = "Access granted. Congratulations!";
+                currentPath.push(folder);
+                password.remove();
+                updatePrompt();
+
+            } else {
+                attempts++;
+                if (attempts >= maxAttempts) {
+                    responseLine.textContent = "Access denied. Too many failed attempts.";
+                    password.remove();
+                } else {
+                    responseLine.textContent = `[sudo] password for root (attempt ${attempts}/${maxAttempts}): `;
+                    responseLine.appendChild(password);
+                    setTimeout(() => password.focus(), 2);
+                }
+            }
+        }
+    });
+};
+
 const terminalInput = document.getElementById("terminal-input");
 const outputContainer = document.getElementById("output-container");
 
@@ -181,18 +238,20 @@ terminalInput.addEventListener("keydown", (e) => {
         const command = terminalInput.value.trim();
 
         // Clear input
-        terminalInput.value = ""; 
+        terminalInput.value = "";   
         
         // Create new output lines
         const childOutput =  document.createElement("div") // Parent of the commandLine and responseLine
 
         const commandLine = document.createElement("div"); // Create <div></div>
         commandLine.innerHTML = `<span>$</span> ${command}`; // <div>$</span></div>
-        commandLine.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+        commandLine.style.fontSize = "0.700rem";
+        commandLine.style.fontSize = "clamp(0.700rem, 2vw, 0.900rem)";
 
         const responseLine = document.createElement("div"); // Create another <div></div> 
         responseLine.style.whiteSpace = "pre-wrap";
-        responseLine.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+        responseLine.style.fontSize = "0.700rem";
+        responseLine.style.fontSize = "clamp(0.700rem, 2vw, 0.900rem)";
 
         // List of command functions
         const commands = {
@@ -207,6 +266,31 @@ terminalInput.addEventListener("keydown", (e) => {
             handleCD(command, responseLine);
         } else if (command.startsWith("cat ")) {
             handleCAT(command, responseLine);
+        } else if (command === "sudo rm -rf") {
+            responseLine.textContent = `Deleting /r3ym0nd
+Deleting /r3ym0nd/Home
+Deleting /r3ym0nd/Journey
+Deleting /r3ym0nd/Skills
+Deleting /r3ym0nd/Projects
+Deleting /root
+Deleting index.html
+Deleting navigation-bar.css
+Deleting style.css
+Deleting reymux.js
+Deleting script.js
+
+[!] Tracking IP address...
+[!] Analyzing behavior patterns...
+[!] Forwarding report to Reymond Joaquin...
+>>> REDIRECTING...
+
+⚠👁 NICE TRY. NOW FACE THE CONSEQUENCE OF YOUR CURIOSITY 👁⚠
+
+"The #1 vulnerability isn’t in the system — it’s YOU."`;
+            // Auto-redirect to Rick Roll after short delay
+            setTimeout(() => {
+                window.location.href = "https://www.youtube.com/watch?v=zL19uMsnpSU&list=RDzL19uMsnpSU&start_radio=1";
+            }, 20000); // 20 seconds delay
         } else if (command in commands) {
             commands[command]();
             if (command === "clear") {
@@ -221,7 +305,7 @@ terminalInput.addEventListener("keydown", (e) => {
                     responseLine.textContent = `${command}: try cat [file]`; 
                     break;
                 default:
-                    responseLine.textContent = `${command}: command not found`; 
+                    responseLine.textContent = `${command}: command not found. Type 'help' to see available commands.`; 
             }
         }
 
