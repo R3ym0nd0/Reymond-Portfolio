@@ -22,11 +22,11 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 - ✅ Added "**Start Exploring**" button in hero
 - ✅ Fixed resume button **double-click** bug
-- ✅ Made terminal controls **sticky**
+- ✅ Made Reymux controls **sticky**
 - ✅ Added **sudo rm -rf** troll command (easter egg)
 - ✅ Root directory now requires a **password**
 - ✅ Renamed "**Home**" section to "**About**"
-- ✅ Improved terminal **font responsiveness**
+- ✅ Improved Reymux **font responsiveness**
 - ✅ Updated hero **heading & subheading**
 - ✅ Tweaked in-app browser **visibility issue**
 
