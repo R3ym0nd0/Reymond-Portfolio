@@ -30,6 +30,6 @@ if (ua.includes("fbav") || ua.includes("instagram")) {
   notice.textContent = "⚠ Facebook or Instagram In-app browser detected. Open in a Chrome browser for best experience please huhu. ⚠";
   document.body.insertAdjacentElement("afterbegin", notice);
 
-  // Auto remove after 5 seconds
+  // Auto remove after 10 seconds
   setTimeout(() => notice.remove(), 10000);
 }
