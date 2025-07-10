@@ -198,7 +198,7 @@ function rootAccess(responseLine, folder) {
     password.style.outline = "none";
     password.style.color = "lime";
     password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
-    
+
     password.autocomplete = "off";
     password.autocorrect = "off";
     password.autocapitalize = "off";
@@ -212,7 +212,7 @@ function rootAccess(responseLine, folder) {
 
     password.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
-            e.preventDefault(); // Prevent default mobile behavior
+            e.preventDefault(); // Prevent default behavior
             const pass = password.value;
             password.value = "";
 
@@ -220,9 +220,9 @@ function rootAccess(responseLine, folder) {
                 responseLine.textContent = "Access granted. Congratulations!";
                 currentPath.push(folder);
                 password.remove();
-                isPasswordPromptActive = false; // Unlock terminal
+                isPasswordPromptActive = false;
                 updatePrompt();
-                terminalInput.focus(); // Re-focus main input
+                terminalInput.focus();
             } else {
                 attempts++;
                 if (attempts >= maxAttempts) {
