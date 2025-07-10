@@ -28,8 +28,8 @@ body {
     flex-direction: column;  
     height: 100%;
     padding-top: 12%;
-    
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif; 
     font-family: 'Segoe UI';
 
     background-color: rgb(15, 15, 15);
@@ -67,7 +67,7 @@ main {
 #hero p{
     max-width: 800px;
 
-    font-size: clamp(0.700rem, 3.9vw, 1.5rem);
+    font-size: clamp(0.700rem, 5vw, 1.5rem);
     color: rgb(189, 185, 185);
     text-align: center;
 }
@@ -660,7 +660,7 @@ footer a{
     }
 
     #hero p {
-        font-size: clamp(0.600rem, 3vw, 1.5rem);
+        font-size: clamp(0.600rem, 5vw, 2rem);
     }
 
     #hero-contact-search {
