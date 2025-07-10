@@ -202,7 +202,7 @@ function rootAccess(responseLine, folder) {
     responseLine.appendChild(password);
 
     // Force focus the password input
-    setTimeout(() => password.focus(), 10);
+    requestAnimationFrame(() => password.focus());
 
     password.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
@@ -223,7 +223,7 @@ function rootAccess(responseLine, folder) {
                 } else {
                     responseLine.textContent = `[sudo] password for root (attempt ${attempts}/${maxAttempts}): `;
                     responseLine.appendChild(password);
-                    setTimeout(() => password.focus(), 10);
+                    requestAnimationFrame(() => password.focus());
                 }
             }
         }
