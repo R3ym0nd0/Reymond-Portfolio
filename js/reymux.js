@@ -198,6 +198,7 @@ function rootAccess(responseLine, folder) {
     password.style.outline = "none";
     password.style.color = "lime";
     password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+    
     password.autocomplete = "off";
     password.autocorrect = "off";
     password.autocapitalize = "off";
@@ -295,7 +296,7 @@ Deleting script.js
 
 ⚠👁 NICE TRY. NOW FACE THE CONSEQUENCE OF YOUR CURIOSITY 👁⚠
 
-Lesson Learned: The #1 vulnerability isn’t in the system — it’s YOU.`;
+The #1 vulnerability isn’t in the system — it’s YOU.`;
             // Auto-redirect to Rick Roll after short delay
             setTimeout(() => {
                 window.location.href = "https://www.youtube.com/watch?v=zL19uMsnpSU&list=RDzL19uMsnpSU&start_radio=1";
