@@ -20,10 +20,10 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ## 📌 What's New
 
-- ✅ Added "**Start Exploring**" button in hero
+- ✅ Added "**Start Exploring**" button in hero section
 - ✅ Fixed resume button **double-click** bug
 - ✅ Made Reymux controls **sticky**
-- ✅ Added **sudo rm -rf** troll command (easter egg)
+- ✅ Added **sudo rm -rf** command (easter egg)
 - ✅ Root directory now requires a **password**
 - ✅ Renamed "**Home**" section to "**About**"
 - ✅ Improved Reymux **font responsiveness**
