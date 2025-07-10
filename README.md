@@ -1,6 +1,6 @@
-# Website Portfolio v1.0.3
+# Website Portfolio v1.1.1
 
-Welcome to version 1.0.3 of my personal website portfolio!  
+Welcome to version 1.1.1 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
@@ -20,9 +20,16 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ## 📌 What's New
 
-- ✅ Hide Scroll Bar
-- ✅ Added **Start Exploring** button
-  
+- ✅ Added "**Start Exploring**" button in hero section
+- ✅ Fixed resume button **double-click** bug
+- ✅ Made Reymux controls **sticky**
+- ✅ Added **sudo rm -rf** command (easter egg)
+- ✅ Root directory now requires a **password**
+- ✅ Renamed "**Home**" section to "**About**"
+- ✅ Improved Reymux **font responsiveness**
+- ✅ Updated hero **heading & subheading**
+- ✅ Tweaked in-app browser **visibility issue**
+
 ---
 
 ## 🛠️ Built With
@@ -36,7 +43,6 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 🚧 Limitations
 
 - **Resume** button is not functional yet
-- **In-app browsers** (like Facebook browser or Snaptube) may display layout issues
 
 ---
 
