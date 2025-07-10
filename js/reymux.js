@@ -75,6 +75,7 @@ root password: @))%w0w_d1dY0uJust*f1nDth1s@))%`
 };
 
 let currentPath = [];
+let isPasswordPromptActive = false;
 
 function getCurrentDir() {
     let dir = fileSystem;
@@ -187,6 +188,7 @@ function updatePrompt() {
 function rootAccess(responseLine, folder) {
     let attempts = 0;
     const maxAttempts = 3;
+    isPasswordPromptActive = true; // Lock terminal input
 
     const password = document.createElement("input");
     password.id = "password-input";
@@ -196,16 +198,20 @@ function rootAccess(responseLine, folder) {
     password.style.outline = "none";
     password.style.color = "lime";
     password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+    password.autocomplete = "off";
+    password.autocorrect = "off";
+    password.autocapitalize = "off";
+    password.spellcheck = false;
+    password.inputMode = "text";
 
-    // Clear and show prompt
     responseLine.textContent = "[sudo] password for root (find the root password!): ";
     responseLine.appendChild(password);
 
-    // Force focus the password input
     requestAnimationFrame(() => password.focus());
 
     password.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
+            e.preventDefault(); // Prevent default mobile behavior
             const pass = password.value;
             password.value = "";
 
@@ -213,13 +219,16 @@ function rootAccess(responseLine, folder) {
                 responseLine.textContent = "Access granted. Congratulations!";
                 currentPath.push(folder);
                 password.remove();
+                isPasswordPromptActive = false; // Unlock terminal
                 updatePrompt();
-
+                terminalInput.focus(); // Re-focus main input
             } else {
                 attempts++;
                 if (attempts >= maxAttempts) {
                     responseLine.textContent = "Access denied. Too many failed attempts.";
                     password.remove();
+                    isPasswordPromptActive = false;
+                    terminalInput.focus();
                 } else {
                     responseLine.textContent = `[sudo] password for root (attempt ${attempts}/${maxAttempts}): `;
                     responseLine.appendChild(password);
@@ -228,7 +237,7 @@ function rootAccess(responseLine, folder) {
             }
         }
     });
-};
+}
 
 const terminalInput = document.getElementById("terminal-input");
 const outputContainer = document.getElementById("output-container");
