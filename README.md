@@ -53,3 +53,15 @@ Although I’m not pursuing web development as a career, having frontend skill h
 ---
 
 Thanks for checking it out!
+
+---
+
+## 📄 License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.
+
+- **You may not** use, copy, modify, or distribute this code for commercial or personal projects without explicit permission.
+- This project is intended for **portfolio and educational purposes only**.
+- For questions or permission requests, please message me directly.
+
+🔗 [Read the full license here](https://creativecommons.org/licenses/by-nc-nd/4.0/)
