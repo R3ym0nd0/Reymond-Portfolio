@@ -13,14 +13,9 @@ html {
     font-size: 16px;
 
     scroll-behavior: smooth; 
-    scrollbar-width: none; /*For Firefox to hide scroll bar*/
     -ms-overflow-style: none;  /*For Old IE / Edge to  hide scroll bar*/
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-}
-
-html::-webkit-scrollbar {
-  display: none; /* For Chrome, Edge, Safari to hide scroll bar*/
 }
 
 body {
@@ -34,6 +29,7 @@ body {
     background-color: rgb(15, 15, 15);
     user-select: none;
 }
+
 
 /* MAIN SECTION */
 main {
@@ -75,9 +71,9 @@ main {
     padding: 15px;
 
     font-size: 0.700rem;
-    font-size: clamp(0.700rem, 1rem, 1.3rem);
+    font-size: clamp(0.700rem, 1.1rem, 1.3rem);
     text-decoration: none;
-    color: rgb(57, 167, 211);
+    color: white;
 
     background-color: rgb(15, 15, 15);
     border: 1px solid rgb(57, 167, 211);
@@ -528,6 +524,10 @@ main {
     border: 3px solid rgb(57, 167, 211);
     cursor: pointer;
     scrollbar-width: none;
+}
+
+#terminal-container::-webkit-scrollbar {
+    display: none;
 }
 
 #terminal-controls {
