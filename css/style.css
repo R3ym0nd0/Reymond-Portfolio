@@ -73,7 +73,7 @@ main {
     font-size: 0.700rem;
     font-size: clamp(0.700rem, 1.1rem, 1.3rem);
     text-decoration: none;
-    color: white;
+    color: rgb(189, 185, 185);
 
     background-color: rgb(15, 15, 15);
     border: 1px solid rgb(57, 167, 211);
