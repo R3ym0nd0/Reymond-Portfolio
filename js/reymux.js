@@ -255,13 +255,13 @@ terminalInput.addEventListener("keydown", (e) => {
 
         const commandLine = document.createElement("div"); // Create <div></div>
         commandLine.innerHTML = `<span>$</span> ${command}`; // <div>$</span></div>
-        commandLine.style.fontSize = "0.700rem";
-        commandLine.style.fontSize = "clamp(0.700rem, 2vw, 0.900rem)";
+        commandLine.style.fontSize = "0.600rem";
+        commandLine.style.fontSize = "clamp(0.600rem, 2vw, 0.900rem)";
 
         const responseLine = document.createElement("div"); // Create another <div></div> 
         responseLine.style.whiteSpace = "pre-wrap";
-        responseLine.style.fontSize = "0.700rem";
-        responseLine.style.fontSize = "clamp(0.700rem, 2vw, 0.900rem)";
+        responseLine.style.fontSize = "0.600rem";
+        responseLine.style.fontSize = "clamp(0.600rem, 2vw, 0.900rem)";
 
         // List of command functions
         const commands = {
