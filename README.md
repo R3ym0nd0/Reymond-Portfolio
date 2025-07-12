@@ -8,21 +8,21 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 📸 Screenshot
 
 ### DESKTOP
-<img width="1260" height="686" alt="WebPortfolio" src="https://github.com/user-attachments/assets/01d8fdb1-7dd3-4dfd-ae1c-fc2a610ec6c2" />
+<img width="1263" height="689" alt="WebPortfolio" src="https://github.com/user-attachments/assets/2b12bfbe-4869-457d-97bf-e7da8086aa6a" />
 
 ### TABLET
-<img width="570" height="767" alt="TabletPortfolio" src="https://github.com/user-attachments/assets/27488079-7efd-4f6a-ad20-e4f8e2e63098" />
+<img width="570" height="752" alt="TabletPortfolio" src="https://github.com/user-attachments/assets/f0d49ec1-9c9d-4893-bf15-25267fa6d8e0" />
 
 ### MOBILE
-<img width="373" height="771" alt="MobilePortfolio" src="https://github.com/user-attachments/assets/6f10a07b-17b4-4211-879a-b1b725cef5d9" />
+<img width="371" height="773" alt="MobilePortfolio" src="https://github.com/user-attachments/assets/8658b4c5-212f-437a-b0f0-efc2ea55aff5" />
 
 ---
 
 ## 📌 What's New
 
 - ✅ Redesigned **Journey Section**
-- ✅ Tweaked **Button Colors** (CTA, Message Me, and Resume)
-- ✅ Added **scroll note** to Reymux
+- ✅ Tweaked **Button Colors** (CTA, Let's Connect, and Resume Button)
+- ✅ Added **note** to Reymux
 
 ---
 
