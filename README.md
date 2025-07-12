@@ -1,6 +1,6 @@
-# Website Portfolio v1.1.1
+# Website Portfolio v1.2.0
 
-Welcome to version 1.1.1 of my personal website portfolio!  
+Welcome to version 1.2.0 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
@@ -8,27 +8,21 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 📸 Screenshot
 
 ### DESKTOP
-![Desktop_Portfolio](https://github.com/user-attachments/assets/299e0060-9405-407a-bea2-7da3c0373c89)
+<img width="1260" height="684" alt="Desktop_Portfolio" src="https://github.com/user-attachments/assets/d53070f9-56a4-4aad-add0-46d68127ba54" />
 
 ### TABLET
-![Tablet_Portfolio](https://github.com/user-attachments/assets/23408ffd-f2c8-4b58-8f14-34f43f833fc0)
+<img width="565" height="755" alt="Tablet_Portfolio" src="https://github.com/user-attachments/assets/046b3652-24c5-4248-8288-71fd797fe799" />
 
 ### MOBILE
-![Mobile_Portfolio](https://github.com/user-attachments/assets/1785fa81-342a-498e-a80d-91e096797af0)
+<img width="369" height="772" alt="Mobile_Portfolio" src="https://github.com/user-attachments/assets/3d4ad78a-2674-46ee-b2a3-433d31596264" />
 
 ---
 
 ## 📌 What's New
 
-- ✅ Added "**Start Exploring**" button in hero section
-- ✅ Fixed resume button **double-click** bug
-- ✅ Made Reymux controls **sticky**
-- ✅ Added **sudo rm -rf** command (easter egg)
-- ✅ Root directory now requires a **password**
-- ✅ Renamed "**Home**" section to "**About**"
-- ✅ Improved Reymux **font responsiveness**
-- ✅ Updated hero **heading & subheading**
-- ✅ Tweaked in-app browser **visibility issue**
+- ✅ Redesigned **Journey Section**
+- ✅ Tweaked **Button Colors** (CTA, Message Me, and Resume)
+- ✅ Added **scroll note** to Reymux
 
 ---
 
