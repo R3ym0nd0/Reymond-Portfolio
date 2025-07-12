@@ -73,7 +73,7 @@ main {
     font-size: 0.700rem;
     font-size: clamp(0.700rem, 1.1rem, 1.3rem);
     text-decoration: none;
-    color: rgb(189, 185, 185);
+    color: rgb(57, 167, 211);
 
     background-color: rgb(15, 15, 15);
     border: 1px solid rgb(57, 167, 211);
@@ -102,8 +102,7 @@ main {
     display: none;
 }
 
-/* HOME SECTION */
-
+/* ABOUT SECTION */
 #about {
     display: flex;
     flex-direction: column;
@@ -172,13 +171,12 @@ main {
     text-align: center;
     text-decoration: none;
     
-    border: 3px solid white;
+    border: 2px solid rgb(57, 167, 211);
     border-radius: 30px;
-    background-color: rgb(15, 15, 15);
 }
 
 #contact-btn:hover {
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(15, 15, 15);
 }
 
 #resume-btn{
@@ -186,17 +184,16 @@ main {
     padding: 0.380em;
 
     font-size: clamp(0.300rem, 4vw, 1.5rem);
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     
-    background-color: rgb(57, 167, 211);
-    border: 3px solid black;
+    border: 2px solid rgb(57, 167, 211);
     border-radius: 30px;
 }
 
 #resume-btn:hover {
-    background-color: rgb(42, 148, 190);
+    background-color: rgb(15, 15, 15);
 }
 
 .section-title {
@@ -215,93 +212,82 @@ main {
 }
 
 .timeline {
-    position: relative;
-
-    border-left: 2px solid rgb(57, 167, 211);
-    border-right: 2px solid rgb(57, 167, 211);
+    position: relative;  
 }
 
 .timeline::before {
-    content: "";
+    content: '';
     position: absolute;
-    left: -9px;
+    left: 0;
     top: 0;
-    height: 100%;
-    width: 2px;
+    bottom: 0;
+    width: 5px;
 
-    background-color: rgb(57, 167, 211);
-}
-
-.timeline::after {
-    content: "";
-    position: absolute;
-    right: -9px;
-    top: 0;
-    height: 100%;
-    width: 2px;
-
-    background-color: rgb(57, 167, 211);
+    background: rgb(57, 167, 211);
 }
 
 .timeline-item {
-    position: relative;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
+    padding-left: 30px;
 }
 
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -14px;
-    top: 0;
-    width: 14px;
-    height: 14px;
-
-    background-color: black;
-
-    border-radius: 50%;
-    border: 3px solid rgb(57, 167, 211);
-    box-shadow: 0 0 0 2px black;
+.timeline-item.left, .timeline-item.right {
+    left: 0;
+    padding-bottom: 24px;
 }
 
-.timeline-item::after {
-    content: "";
-    position: absolute;
-    right: -14px;
-    top: 0;
-    z-index: 100;
-    width: 14px;
-    height: 14px;
+.content {
+    padding: 20px; 
 
-    background-color: black;
-
-    border-radius: 50%;
-    border: 3px solid rgb(57, 167, 211);
-    box-shadow: 0 0 0 2px black;
-}
-
-.timeline-date {
-    margin-bottom: 8px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid white;
-
-    font-size: 1.1rem;
-    color: white;
-}
-
-.timeline-content { 
-    padding: 5px 10px 15px;
-
-    background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
-    font-weight: lighter;
 
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    border-top: 1px solid rgb(57, 167, 211);
     border-left: 10px solid rgb(57, 167, 211);
     border-right: 10px solid rgb(57, 167, 211);
-    border-bottom: 2px solid rgb(57, 167, 211);
-    border-radius: 10px;
+    border-bottom: 1px solid rgb(57, 167, 211);
+}
+
+/* .timeline-item.left::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 560px;
+    height: 25px;
+    width: 25px;
+
+    background-color: rgb(30, 30, 30);
+    border: 3px solid rgb(57, 167, 211);
+    border-radius: 50%;
+}
+
+.timeline-item.right::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    right: 550px;
+    height: 25px;
+    width: 25px;
+
+    background-color: rgb(30, 30, 30);
+    border: 3px solid rgb(57, 167, 211);
+    border-radius: 50%;
+} */
+
+.date {
+    margin-bottom: 5px;
+
+    font-size: 0.9rem;
+    color: rgb(189, 185, 185);
+}
+
+.title {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .design-container {
@@ -685,6 +671,21 @@ footer a{
 }
 
 @media (min-width: 768px) {
+
+    .timeline::before {
+        left: 50%;
+    }
+
+    .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+    }
+
+    .timeline-item.right {
+        left: 50%;
+    }
+    
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
