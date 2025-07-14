@@ -330,6 +330,7 @@ main {
     padding-bottom: 8px;
 
     font-size: 1.5rem;
+    font-weight: 500;
     color: white;
 
     border-bottom: 1px solid white;
@@ -352,6 +353,7 @@ main {
     background-color: rgb(15, 15, 15);
     border-left: 10px solid rgb(57, 167, 211);
     border-right: 10px solid rgb(57, 167, 211);
+    border-top: 1px solid rgb(57, 167, 211);
     border-bottom: 1px solid rgb(57, 167, 211);
     border-radius: 6px;
 } 
@@ -659,6 +661,24 @@ footer a{
 
     .timeline-item.right {
         left: 50%;
+    }
+
+    .skill-category ul { 
+        display: flex;
+        column-gap: 2%;
+        row-gap: 10px;
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+    .skill-category ul li {
+        width: 32%;
+        margin-bottom: 0;
+    }
+
+    .skill-category ul li:hover {
+        width: 32%;
     }
     
     .projects-container {
