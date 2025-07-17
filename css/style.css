@@ -30,7 +30,6 @@ body {
     user-select: none;
 }
 
-
 /* MAIN SECTION */
 main {
     flex: 1;
@@ -331,9 +330,9 @@ main {
 
     font-size: 1.5rem;
     font-weight: 500;
-    color: white;
+    color: rgb(189, 185, 185);
 
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(78, 76, 76);
 }
 
 .skill-category ul { 
@@ -384,19 +383,15 @@ main {
     margin-bottom: 30px;
 }
 
-.projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+.project-type {
+    color: rgb(189, 185, 185);
+    border-bottom: 2px solid rgb(78, 76, 76);
 
-.projects-container h3 {
     padding-bottom: 8px;
     margin-bottom: 15px;
 
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 .project-card {
@@ -680,9 +675,11 @@ footer a{
     .skill-category ul li:hover {
         width: 32%;
     }
-    
-    .projects-container {
+
+    .skills-section {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
     .project-card {
@@ -751,6 +748,10 @@ footer a{
 
     #hero-contact-search {
         gap: 4em;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* FOOTER SECTION */
