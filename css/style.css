@@ -21,7 +21,6 @@ html {
 body {
     display: flex;
     flex-direction: column;  
-    height: 100%;
     padding-top: 12%;
 
     font-family: 'Segoe UI', Arial, sans-serif; 
@@ -712,7 +711,7 @@ footer a{
     }
 
     #profile-links a i:hover {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #profile-links a i span {
