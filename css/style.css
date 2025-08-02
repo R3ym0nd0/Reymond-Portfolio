@@ -761,7 +761,7 @@ footer a{
     }
 
     footer a:hover{
-        color: tomato;
+        color: rgb(42, 148, 190);
         text-decoration: underline;
     }
 }
