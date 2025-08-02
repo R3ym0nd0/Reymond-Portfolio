@@ -1,6 +1,6 @@
-# Website Portfolio v1.2.0
+# Website Portfolio v1.2.2
 
-Welcome to version 1.2.0 of my personal website portfolio!  
+Welcome to version 1.2.2 of my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
@@ -23,6 +23,16 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 - ✅ Redesigned **Journey Section**
 - ✅ Tweaked **Button Colors** (CTA, Let's Connect, and Resume Button)
 - ✅ Added **note** to Reymux
+
+---
+
+## 📜 Previous Versions
+
+Looking for older versions of my Portfolio before v0.2.0 below??
+
+🔗 [Click here to browse the original versions (v0.0.1 to v0.1.0) inside the Portfolio Repo](https://github.com/R3ym0nd0/Front-end_Development/tree/main/Portfolio)
+
+> These were stored in a Portfolio repository before this tool got its own dedicated repo.
 
 ---
 
