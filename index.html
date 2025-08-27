@@ -32,6 +32,13 @@
                     <li><a class="nav-section" href="#skills">SKILLS</a></li>
                     <li><a class="nav-section" href="#projects">PROJECTS</a></li>
                     <li><a class="nav-section" href="#reymux">REYMUX</a></li>
+                    <li>
+                        <select id="payment" style="font-family: 'Segoe UI', Arial, sans-serif; background-color: rgb(30, 30, 30); color: white; padding: 5px;" onchange="window.location.href = this.value;">
+                            <option value="">Additional Links</option>
+                            <option value="blog.html">Blog Post</option>
+                            <option value="reports.html">Reports</option>
+                        </select>
+                    </li>
                 </ul>    
             </div>
             <hr class="line">  
@@ -163,8 +170,8 @@
                         </div>
 
                         <div class="date">2025</div>
-                        <div class="title">Frontend & Recon</div>
-                        <p>Learning frontend (HTML, CSS, JS). Built portfolio, Reycademy and ReyBOT. Practicing recon on TryHackMe and HackTheBox.</p>
+                        <div class="title">Web Dev & Recon</div>
+                        <p>Learned frontend & backend. Built portfolio, Reycademy and ReyBOT. Practicing recon on TryHackMe and HackTheBox.</p>
                     </div>
                 </div>
 
@@ -183,7 +190,7 @@
 
                         <div class="date">Now</div>
                         <div class="title">Continous Learning</div>
-                        <p>Improving Reycademy, ReyBOT, and portfolio. Still learning new things every day.</p>
+                        <p>Improving Reycademy and portfolio. Still learning new things every day.</p>
                     </div>  
                 </div>
             </div>
@@ -195,8 +202,12 @@
                 <div class="skills-container">
                     
                     <div class="skill-category">    
-                        <h3>🌐 Networking Fundamentals</h3>
+                        <h3>🌐 Networking Basics</h3>
                         <ul>
+                            <li>
+                                IP Addressing
+                                <span class="description">- Helps me understand how devices communicate on a network</span>
+                            </li>
                             <li>
                                 OSI Model
                                 <span class="description">- Helps me understand how data flows theoretically</span>
@@ -212,10 +223,6 @@
                                 <span class="description">- Helps me understand my target's network size and scan ranges</span>
                             </li>
                             <li>
-                                Topologies
-                                <span class="description">- Helps me understand the layout of networks</span>
-                            </li>
-                            <li>
                                 Network Devices
                                 <span class="description">- Helps me understand how network traffic flows behind the scenes</span>
                             </li>
@@ -227,7 +234,7 @@
                     </div>
 
                     <div class="skill-category">
-                        <h3>💻 Scripting & Programming</h3>
+                        <h3>💻 Scripting</h3>
                         <ul>
                             <li>
                                 Bash scripting
@@ -258,6 +265,14 @@
                             <li>
                                 JavaScript
                                 <span class="description">- Helps me understand client-side behavior and how it can be abused</span>
+                            </li>
+                            <li>
+                                Express
+                                <span class="description">- Helps me understand backend logic and routing.</span>
+                            </li>
+                            <li>
+                                PostgreSQL
+                                <span class="description">- Helps me understand database behavior and SQLi</span>
                             </li>  
                             <li>
                                 HTTP/HTTPS
@@ -267,15 +282,15 @@
                     </div>
 
                     <div class="skill-category">
-                        <h3>🛠️ Pentesting Tools</h3>
+                        <h3>🛠️ Web Security</h3>
                         <ul>
                             <li>
-                                Nmap
-                                <span class="description">- Helps me discover open ports and gather information about my target</span>
+                                SQLi Basics
+                                <span class="description">- Helps me understand how SQL can manipulate relational databases</span>
                             </li>
                             <li>
-                                Wireshark
-                                <span class="description">- Helps me inspect and analyze network packets in real time</span>
+                                XSS Basics
+                                <span class="description">- Helps me understand how user input can affect website behavior</span>
                             </li>
                             <li>
                                 BurpSuite
@@ -286,20 +301,12 @@
                                 <span class="description">- Helps me brute-force web directories to find hidden or useful information</span>
                             </li>
                             <li>
-                                Wafw00f
-                                <span class="description">- Helps me quickly check if my target is using a WAF or not</span>
+                                Nmap
+                                <span class="description">- Helps me discover open ports and gather information about my target</span>
                             </li>
                             <li>
-                                cURL
-                                <span class="description">- Helps me modify requests, see the content of a file or page before downloading or clicking it</span>
-                            </li>
-                            <li>
-                                Netcat
-                                <span class="description">- Helps me listen on a port or connect to my target</span>
-                            </li>
-                            <li>
-                                Hydra
-                                <span class="description">- Helps me brute-force passwords efficiently on my target</span>
+                                Wireshark
+                                <span class="description">- Helps me inspect and analyze network packets in real time</span>
                             </li>
                         </ul>
                     </div>
@@ -310,10 +317,6 @@
                             <li>
                                 Kali Linux
                                 <span class="description">- This is where I do all my pentesting since it has all the tools I need</span>
-                            </li>
-                            <li>
-                                Windows
-                                <span class="description">- This is where I do most of my coding because it runs fast and feels smooth</span>
                             </li>
                             <li>
                                 VSCode
@@ -542,9 +545,9 @@
 
                     <h3>Reycademy Website v0.2.1</h3>
                     <p>A free cybersecurity education site with structured Tagalog videos and hands-on training.</p>
-                    <p class="tech">HTML | CSS | JavaScript | Express | SQL</p>
+                    <p class="tech">HTML | CSS | JavaScript | Express | PostgreSQL</p>
                     <div class="project-links">
-                        <a href="https://github.com/R3ym0nd0/Reycademy" target="_blank">View Source</a>
+                        <a href="https://github.com/R3ym0nd0/Reycademy" target="_blank" style="background-color: orange;">In progress</a>
                     </div>
                 </div>
 
@@ -573,7 +576,7 @@
                     <p>A channel I created to share my knowledge in ethical hacking and help my fellow Filipinos learn ethical hacking.</p>
                     <p class="tech">Teaching | Presenting | Content Creation</p>
                     <div class="project-links">
-                        <a href="https://www.youtube.com/@reycademy" target="_blank">View Source</a>
+                        <a href="https://www.youtube.com/@reycademy" target="_blank" style="background-color: orange;">Coming Soon</a>
                     </div>
                 </div>
 
@@ -661,7 +664,7 @@
 
         <div id="footer-info">
             <p>&copy 2025 Reymond Joaquin. All rights reserved.</p>
-            <p>v1.2.2 | Built with HTML, CSS, & JavaScript</p>
+            <p>v1.2.3 | Built with HTML, CSS, & JavaScript</p>
             <p>Design by Reymond Joaquin | Icons by <a href="https://fontawesome.com" target="_blank">FontAwesome</a></p>
         </div>
     </footer>
