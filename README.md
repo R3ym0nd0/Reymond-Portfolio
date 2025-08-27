@@ -1,11 +1,11 @@
-# Website Portfolio v1.2.2
+# Website Portfolio v1.2.3
 
-Welcome to version 1.2.2 of my personal website portfolio!  
+Welcome to my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
 ### DESKTOP
 <img width="1263" height="689" alt="WebPortfolio" src="https://github.com/user-attachments/assets/2b12bfbe-4869-457d-97bf-e7da8086aa6a" />
@@ -18,11 +18,10 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 
 ---
 
-## 📌 What's New
+## 📌 What's New (v1.2.3)
 
-- ✅ Redesigned **Journey Section**
-- ✅ Tweaked **Button Colors** (CTA, Let's Connect, and Resume Button)
-- ✅ Added **note** to Reymux
+- ✅ Added drop down menu for blog post & personal reports
+- ✅ Remove & add some skills
 
 ---
 
@@ -46,7 +45,7 @@ Looking for older versions of my Portfolio before v0.2.0 below??
 
 ## 🚧 Limitations
 
-- **Resume** button is not functional yet
+- **Resume** button is placeholder yet
 
 ---
 
