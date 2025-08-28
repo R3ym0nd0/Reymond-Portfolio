@@ -8,19 +8,20 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ## 📸 Screenshots
 
 ### DESKTOP
-<img width="1263" height="689" alt="WebPortfolio" src="https://github.com/user-attachments/assets/2b12bfbe-4869-457d-97bf-e7da8086aa6a" />
+<img width="1262" height="685" alt="PortfolioDesktop" src="https://github.com/user-attachments/assets/54a3c528-3c52-4bcf-b604-a10dc10d5927" />
 
 ### TABLET
-<img width="570" height="752" alt="TabletPortfolio" src="https://github.com/user-attachments/assets/f0d49ec1-9c9d-4893-bf15-25267fa6d8e0" />
+<img width="571" height="762" alt="PortfolioTablet" src="https://github.com/user-attachments/assets/34e43e8c-3e75-4022-b8b2-85aef82a9ceb" />
 
 ### MOBILE
-<img width="371" height="773" alt="MobilePortfolio" src="https://github.com/user-attachments/assets/8658b4c5-212f-437a-b0f0-efc2ea55aff5" />
+<img width="366" height="892" alt="PortfolioMobile" src="https://github.com/user-attachments/assets/f3093501-0d7f-4951-8e45-2d75dbad39b4" />
 
 ---
 
 ## 📌 What's New (v1.2.3)
 
-- ✅ Added drop down menu for blog post & personal reports
+- ✅ Added drop down menu for blog post, personal reports & certifications (placeholders for now)
+- ✅ Fix badge icon hover small size at 1024px
 - ✅ Remove & add some skills
 
 ---
