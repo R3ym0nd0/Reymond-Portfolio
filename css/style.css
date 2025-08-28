@@ -720,7 +720,7 @@ footer a{
     }
 
     #profile-links a i:hover {
-        font-size: 2.5rem;
+        font-size: 3.1rem;
     }
 
     #profile-links a i span {
@@ -792,6 +792,10 @@ footer a{
 
     #profile-links a i span:hover{ 
         display: flex;
+    }
+
+    #profile-links a i:hover {
+        font-size: 2.5rem;
     }
 
     #description {
