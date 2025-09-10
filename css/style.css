@@ -25,8 +25,8 @@ body {
 
     font-family: 'Segoe UI', Arial, sans-serif; 
 
-    background-color: rgb(15, 15, 15);
     user-select: none;
+    background: linear-gradient(to right, #302e2e, #000000);
 }
 
 /* MAIN SECTION */
@@ -71,16 +71,18 @@ main {
     font-size: 0.700rem;
     font-size: clamp(0.700rem, 1.1rem, 1.3rem);
     text-decoration: none;
+    font-weight: bold;
     color: rgb(57, 167, 211);
 
-    background-color: rgb(15, 15, 15);
-    border: 1px solid rgb(57, 167, 211);
+    border: 2px solid rgb(57, 167, 211);
     border-radius: 10px;
 }
 
 #start-button:hover {
     color: rgb(15, 15, 15);
+
     background-color: rgb(42, 148, 190);
+    border: none;
 }
 
 #profile-links {
@@ -168,13 +170,13 @@ main {
     color: white;
     text-align: center;
     text-decoration: none;
-    
+
     border: 2px solid rgb(57, 167, 211);
-    border-radius: 30px;
+    border-radius: 8px;
 }
 
 #contact-btn:hover {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(36, 35, 35);
 }
 
 #resume-btn{
@@ -187,11 +189,11 @@ main {
     text-decoration: none;
     
     border: 2px solid rgb(57, 167, 211);
-    border-radius: 30px;
+    border-radius: 8px;
 }
 
 #resume-btn:hover {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(36, 35, 35);
 }
 
 .section-title {
@@ -206,7 +208,7 @@ main {
 #journey {    
     padding: 40px 5%;
 
-    background-color: rgb(15, 15, 15);
+    background: linear-gradient(to right, #302e2e, #000000);
 }
 
 .timeline {
@@ -372,7 +374,7 @@ main {
 
 /* PROJECTS SECTION */
 #projects {
-    background-color: rgb(15, 15, 15);
+    background: linear-gradient(to right, #302e2e, #000000);
     padding: 40px 5%;
     text-align: center;
 }
