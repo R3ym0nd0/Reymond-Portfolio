@@ -3,22 +3,23 @@
 Welcome to my personal website portfolio!  
 This is part of my ongoing journey as an aspiring **Web Penetration Tester** where I'm diving deeper into front-end development to better understand how websites are built.
 
+### Live site: [reymondjoaquin.netlify.app](https://reymondjoaquin.netlify.app/)
 ---
 
 ## Screenshots
 
 ### DESKTOP
-<img width="1262" height="685" alt="PortfolioDesktop" src="https://github.com/user-attachments/assets/54a3c528-3c52-4bcf-b604-a10dc10d5927" />
+<img width="1262" height="690" alt="Desktop_Portfolio" src="https://github.com/user-attachments/assets/732cb6a8-7a5a-4766-a112-a07a18f562d2" />
 
 ### TABLET
-<img width="571" height="762" alt="PortfolioTablet" src="https://github.com/user-attachments/assets/34e43e8c-3e75-4022-b8b2-85aef82a9ceb" />
+<img width="574" height="763" alt="Tablet_Portfolio" src="https://github.com/user-attachments/assets/f80806dd-00da-413c-866a-5ea6287a40f1" />
 
 ### MOBILE
-<img width="366" height="892" alt="PortfolioMobile" src="https://github.com/user-attachments/assets/f3093501-0d7f-4951-8e45-2d75dbad39b4" />
+<img width="350" height="763" alt="Mobile_Portfolio" src="https://github.com/user-attachments/assets/2f5dc963-e801-4031-8812-5344260ccfbc" />
 
 ---
 
-## What's New (v1.2.3)
+## What's New
 
 - Added drop down menu for blog post, personal reports & certifications (placeholders for now)
 - Fix badge icon hover small size at 1024px
@@ -38,9 +39,9 @@ Looking for older versions of my Portfolio before v0.2.0 below??
 
 ## Built With
 
-- HTML
-- CSS (Vanilla)
-- JavaScript (DOM manipulation)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
   
 ---
 
