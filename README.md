@@ -14,7 +14,7 @@ This is part of my ongoing journey as an aspiring **Web Penetration Tester** whe
 ### TABLET
 <img width="574" height="763" alt="Tablet_Portfolio" src="https://github.com/user-attachments/assets/f80806dd-00da-413c-866a-5ea6287a40f1" />
 
-### MOBILE
+### CELLPHONE
 <img width="350" height="763" alt="Mobile_Portfolio" src="https://github.com/user-attachments/assets/2f5dc963-e801-4031-8812-5344260ccfbc" />
 
 ---
