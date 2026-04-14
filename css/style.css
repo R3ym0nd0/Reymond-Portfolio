@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --section-solid-bg: linear-gradient(180deg, rgb(29, 29, 29), rgb(18, 18, 18));
+    --section-gradient-bg: linear-gradient(to right, #302e2e, #000000);
+}
+
 html {
     scroll-padding-top: 81px;
 
@@ -25,7 +30,7 @@ body {
 
     font-family: 'Segoe UI', Arial, sans-serif; 
 
-    user-select: none;
+    /* user-select: none; */
     background: linear-gradient(to right, #302e2e, #000000);
 }
 
@@ -55,6 +60,14 @@ main {
 
 #hero h1{
     font-size: clamp(0.875rem, 9vw, 5rem);
+    text-shadow: 0 0 22px rgba(57, 167, 211, 0.22);
+}
+
+@media (max-width: 599px) {
+    #hero h1 {
+        font-size: clamp(2.35rem, 11vw, 3.4rem);
+        line-height: 1.08;
+    }
 }
 
 #hero p{
@@ -62,6 +75,7 @@ main {
 
     font-size: clamp(0.700rem, 5vw, 1.5rem);
     color: rgb(189, 185, 185);
+    text-shadow: 0 0 14px rgba(57, 167, 211, 0.08);
     text-align: center;
 }
 
@@ -76,6 +90,7 @@ main {
 
     border: 2px solid rgb(57, 167, 211);
     border-radius: 10px;
+    box-shadow: 0 0 18px rgba(57, 167, 211, 0.12);
 }
 
 #start-button:hover {
@@ -83,6 +98,7 @@ main {
 
     background-color: rgb(42, 148, 190);
     border: none;
+    box-shadow: 0 0 24px rgba(57, 167, 211, 0.26);
 }
 
 #profile-links {
@@ -108,9 +124,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em 1em 4em 1em;
+    padding: 5rem 1.25rem;
 
-    background-color: rgb(30, 30, 30);
+    background: var(--section-solid-bg);
 }
 
 #introduction {
@@ -119,7 +135,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2em; 
+    gap: 1.35rem; 
 
     text-align: center;
 }
@@ -129,11 +145,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
+    max-width: 240px;
     
-    font-size: clamp(0.600rem, 10vw, 3rem);  
-    font-weight:lighter;
-    color: white;
+    font-size: clamp(0.9rem, 6vw, 2.4rem);  
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgb(228, 235, 240);
+}
+
+@media (max-width: 599px) {
+    .text {
+        font-size: clamp(1.15rem, 7.5vw, 2rem);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+    }
+}
+
+#my_profile {
+    position: relative;
+    padding: 0.35rem;
+
+    background: linear-gradient(180deg, rgba(57, 167, 211, 0.12), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(57, 167, 211, 0.14);
+    border-radius: 50%;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.14);
 }
 
 #my_pic {
@@ -142,16 +177,18 @@ main {
     
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.08);
 }
 
 #description {
     display: block;
-    margin: 1.8em;
-    margin-bottom: 2em;
+    max-width: 760px;
+    margin: 1.8rem auto 2.1rem;
+    padding: 0;
 
-    color: white;
-    font-size: clamp(0.600rem, 2vw, 1rem);
-    line-height: 2em;
+    color: rgb(220, 224, 228);
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    line-height: 1.9;
     text-align: center; 
 }
 
@@ -159,41 +196,46 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 0.9rem;
 }
 
 #contact-btn{
-    width: 12.5em;
-    padding:  0.380em;
+    width: 11.25em;
+    padding:  0.62rem 0.95rem;
 
-    font-size: clamp(0.300rem, 4vw, 1.5rem);
-    color: white;
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    color: rgb(10, 18, 22);
     text-align: center;
     text-decoration: none;
+    font-weight: 700;
 
-    border: 2px solid rgb(57, 167, 211);
-    border-radius: 8px;
+    background: linear-gradient(180deg, rgb(98, 204, 243), rgb(57, 167, 211));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 10px 18px rgba(17, 56, 74, 0.14);
 }
 
 #contact-btn:hover {
-    background-color: rgb(36, 35, 35);
+    background: linear-gradient(180deg, rgb(117, 214, 248), rgb(72, 180, 222));
 }
 
 #resume-btn{
-    width: 12.5em;
-    padding: 0.380em;
+    width: 11.25em;
+    padding: 0.62rem 0.95rem;
 
-    font-size: clamp(0.300rem, 4vw, 1.5rem);
-    color: white;
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    color: rgb(225, 241, 246);
     text-align: center;
     text-decoration: none;
+    font-weight: 700;
     
-    border: 2px solid rgb(57, 167, 211);
-    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(57, 167, 211, 0.08), rgba(18, 22, 28, 0.92));
+    border: 1px solid rgba(57, 167, 211, 0.22);
+    border-radius: 12px;
 }
 
 #resume-btn:hover {
-    background-color: rgb(36, 35, 35);
+    background: rgba(57, 167, 211, 0.16);
 }
 
 .section-title {
@@ -208,7 +250,7 @@ main {
 #journey {    
     padding: 56px 5%;
 
-    background: linear-gradient(to right, #302e2e, #000000);
+    background: var(--section-gradient-bg);
 }
 
 .timeline {
@@ -260,10 +302,10 @@ main {
     color: white;
     text-align: left;
 
-    background: linear-gradient(180deg, rgba(29, 29, 29, 0.98), rgba(14, 14, 14, 0.98));
+    background: linear-gradient(180deg, rgba(36, 36, 38, 0.98), rgba(20, 20, 22, 0.98));
     border-radius: 18px;
-    border: 1px solid rgba(57, 167, 211, 0.26);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
 }
 
 .content::before {
@@ -272,7 +314,7 @@ main {
     inset: 0;
     pointer-events: none;
 
-    background: linear-gradient(135deg, rgba(57, 167, 211, 0.12), transparent 42%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.035), transparent 45%);
     border-radius: inherit;
 }
 
@@ -286,10 +328,10 @@ main {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgb(176, 228, 245);
+    color: rgb(188, 230, 245);
 
-    background: rgba(57, 167, 211, 0.12);
-    border: 1px solid rgba(57, 167, 211, 0.22);
+    background: rgba(57, 167, 211, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 999px;
 }
 
@@ -372,9 +414,7 @@ main {
 #skills {
     padding: 56px 5%;
 
-    background:
-        radial-gradient(circle at top left, rgba(57, 167, 211, 0.18), transparent 32%),
-        linear-gradient(180deg, rgb(24, 24, 24), rgb(13, 13, 13));
+    background: var(--section-solid-bg);
 }
 
 .skills-container {
@@ -387,10 +427,10 @@ main {
     overflow: hidden;
     padding: 1.4rem;
 
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0.96), rgba(16, 16, 16, 0.98));
-    border: 1px solid rgba(57, 167, 211, 0.25);
+    background: linear-gradient(180deg, rgba(31, 32, 35, 0.98), rgba(18, 18, 20, 0.99));
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 18px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
 }
 
 .skill-category::before {
@@ -399,7 +439,7 @@ main {
     inset: 0;
     pointer-events: none;
 
-    background: linear-gradient(135deg, rgba(57, 167, 211, 0.12), transparent 45%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.035), transparent 48%);
 }
 
 .skill-category h3 {
@@ -412,7 +452,7 @@ main {
     letter-spacing: 0.02em;
     color: white;
 
-    border-bottom: 1px solid rgba(57, 167, 211, 0.28);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -484,7 +524,7 @@ main {
 
 /* PROJECTS SECTION */
 #projects {
-    background: linear-gradient(to right, #302e2e, #000000);
+    background: var(--section-gradient-bg);
     padding: 40px 5%;
     text-align: center;
 }
@@ -508,7 +548,7 @@ main {
 .project-card {
     margin-bottom: 0.875rem;
 
-    background: linear-gradient(180deg, rgba(34, 37, 42, 0.98), rgba(20, 22, 26, 0.98));
+    background: linear-gradient(180deg, rgba(36, 36, 38, 0.98), rgba(20, 20, 22, 0.98));
     color: white;
 
     border: 1px solid rgba(91, 201, 244, 0.22);
@@ -622,16 +662,16 @@ main {
 
 
 #reymux {
-    padding: 40px 5%;
+    padding: 56px 5%;
 
-    background-color: rgb(30, 30, 30);
+    background: var(--section-solid-bg);
 }
 
 #terminal-container {
     height: 500px;
     width: 100%;
     max-width: 1250px;
-    padding: 0 5px;
+    padding: 0 0 0.75rem;
     margin: auto;
     overflow: auto;
 
@@ -639,9 +679,10 @@ main {
     color: lime;
     font-family: monospace;
 
-    background-color: rgb(15, 15, 15);
-    border-radius: 15px;
-    border: 3px solid rgb(57, 167, 211);
+    background: linear-gradient(180deg, rgba(20, 22, 24, 0.99), rgba(10, 11, 13, 0.99));
+    border-radius: 20px;
+    border: 1px solid rgba(91, 201, 244, 0.18);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
     cursor: pointer;
     scrollbar-width: none;
 }
@@ -651,19 +692,26 @@ main {
 }
 
 #terminal-controls {
-    background-color: rgb(15, 15, 15);
+    padding-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(180deg, rgba(20, 22, 24, 0.98), rgba(14, 15, 17, 0.98));
     position: sticky;
     top: 0;
     z-index: 5;
+}
 
+#reymux #terminal-controls .design-container {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
 }
 
 #menu-bar {
     display: flex;
     gap: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgb(57, 167, 211);
+    margin-bottom: 0.4rem;
+    padding: 0 0.9rem 0.85rem;
+    color: rgb(158, 170, 180);
+    border-bottom: 1px solid rgba(91, 201, 244, 0.12);
 }
 
 #terminal-container p {
@@ -671,6 +719,7 @@ main {
 }
 
 #output-container {
+    padding: 0 0.35rem;
     font-size: 0.600rem;  
     font-size: clamp(0.600rem, 2vw, 0.900rem); 
 }
@@ -688,6 +737,8 @@ main {
     display: flex;
     align-items: center;
     white-space: pre;
+    padding: 0 0.35rem;
+    margin-top: 0.8rem;
     font-size: 0.600rem;
     font-size: clamp(0.600rem, 2vw, 0.800rem); 
 }
@@ -704,7 +755,7 @@ main {
     
     color: lime;
 
-    background-color: rgb(15, 15, 15);
+    background-color: transparent;
     outline: none;
     border: none;
 }
@@ -867,14 +918,6 @@ footer a{
         margin-bottom: 0;
     }  
 
-    .project-card img {
-        width: 100%;
-        height: 25vh;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        object-fit: fill;
-        border-bottom: 3px solid rgb(57, 167, 211);
-    }
 }
 
 /* DESKTOP */ 
