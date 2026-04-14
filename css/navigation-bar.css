@@ -79,7 +79,7 @@ nav {
 /* TABLET */
 @media (min-width: 600px) {
 
-    #name_menu-icon h2 {
+    #header-bar h2 {
         font-size: 1.5rem;
     }   
 
