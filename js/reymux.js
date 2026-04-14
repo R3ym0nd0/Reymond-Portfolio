@@ -1,4 +1,4 @@
-const fileSystem = {    
+﻿const fileSystem = {    
     "r3ym0nd" : {
         "Home": {
             "whoami.txt"  : `Name: Reymond Joaquin
@@ -182,7 +182,7 @@ function updatePrompt() {
     const promptSpan = document.getElementById("prompt");
 
     const user = currentPath.length > 0 ? currentPath[0] : "/";
-    promptSpan.textContent = `${user}㉿reymux:~$`;
+    promptSpan.textContent = `${user}/reymux:~$`;
 };
 
 function rootAccess(responseLine, folder) {
@@ -193,11 +193,13 @@ function rootAccess(responseLine, folder) {
     const password = document.createElement("input");
     password.id = "password-input";
     password.type = "password";
-    password.style.backgroundColor = "rgb(15, 15, 15)";
+    password.style.backgroundColor = "transparent";
     password.style.border = "none";
     password.style.outline = "none";
     password.style.color = "lime";
     password.style.fontSize = "clamp(0.700rem, 2vw, 0.800rem)";
+    password.style.fontFamily = "inherit";
+    password.style.caretColor = "lime";
 
     password.autocomplete = "off";
     password.autocorrect = "off";
@@ -294,9 +296,9 @@ Deleting script.js
 [!] Forwarding report to Reymond Joaquin...
 >>> REDIRECTING...
 
-⚠👁 NICE TRY. NOW FACE THE CONSEQUENCE OF YOUR CURIOSITY 👁⚠
+[!] NICE TRY. NOW FACE THE CONSEQUENCE OF YOUR CURIOSITY [!]
 
-The #1 vulnerability isn’t in the system — it’s YOU.`;
+The #1 vulnerability isn't in the system - it's YOU.`;
             // Auto-redirect to Rick Roll after short delay
             setTimeout(() => {
                 window.location.href = "https://www.youtube.com/watch?v=zL19uMsnpSU&list=RDzL19uMsnpSU&start_radio=1";
