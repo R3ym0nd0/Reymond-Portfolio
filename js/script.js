@@ -89,9 +89,12 @@ const techBadgeColorMap = {
     "JavaScript": ["#9a8a1d", "#fff1a3"],
     "Express": ["#4b5563", "#d1d5db"],
     "PostgreSQL": ["#336791", "#9ac6ef"],
+    "MySQL": ["#2f6f8f", "#a9d7f4"],
     "Teaching": ["#92551f", "#ffd29b"],
     "Presenting": ["#8c3a5e", "#ffc0d9"],
-    "Content Creation": ["#7b4bc2", "#d8c3ff"]
+    "Content Creation": ["#7b4bc2", "#d8c3ff"],
+    "Game Development": ["#6b3f8f", "#e1c3ff"],
+    "Interactive Storytelling": ["#7a3f3f", "#ffc4b8"]
 };
 
 function getSkillName(skillItem) {

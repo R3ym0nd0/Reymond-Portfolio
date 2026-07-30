@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reymond - Security Writeups</title>
+
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/me.PNG" type="image/png">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Security lab notes and writeups by Reymond Joaquin">
+
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+<body class="writeups-page">
+    <header>
+        <nav>
+            <div id="header-bar">
+                <h2><a class="nav-section" href="index.html" id="name">REYMOND JOAQUIN</a></h2>
+                <button id="hamburger-icon">&#9776;</button>
+            </div>
+            <hr class="line">
+            <div id="nav-bar">
+                <ul>
+                    <li><a class="nav-section" href="index.html#about">ABOUT</a></li>
+                    <li><a class="nav-section" href="index.html#journey">JOURNEY</a></li>
+                    <li><a class="nav-section" href="index.html#experience">EXPERIENCE</a></li>
+                    <li><a class="nav-section" href="index.html#skills">SKILLS</a></li>
+                    <li><a class="nav-section" href="index.html#projects">PROJECTS</a></li>
+                    <li><a class="nav-section" href="index.html#reymux">REYMUX</a></li>
+                    <li>
+                        <select style="font-family: 'Segoe UI', Arial, sans-serif; background-color: rgb(30, 30, 30); color: white; padding: 5px;" onchange="window.location.href = this.value;">
+                            <option value="">Additional Links</option>
+                            <option value="blog.html">Blog Post</option>
+                            <option value="writeups.html">Writeups</option>
+                            <option value="certifications.html">Certifications</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <hr class="line">
+        </nav>
+    </header>
+
+    <main>
+        <section id="writeups-board">
+            <div class="writeups-page-header">
+                <div>
+                    <span class="writeups-label">LAB ARCHIVE</span>
+                    <h1>Writeups</h1>
+                    <p>
+                        Security lab notes, payload experiments, and short walkthroughs from practice environments like PortSwigger Web Security Academy.
+                    </p>
+                </div>
+
+                <div class="writeups-stats" aria-label="Writeup summary">
+                    <span><strong>3</strong> Draft Slots</span>
+                    <span><strong>5</strong> Topics</span>
+                    <span><strong>1</strong> Platform</span>
+                </div>
+            </div>
+
+            <div class="writeups-controls">
+                <div class="writeup-filters" aria-label="Writeup categories">
+                    <span>All</span>
+                    <span>XSS</span>
+                    <span>SQLi</span>
+                    <span>Access Control</span>
+                    <span>Authentication</span>
+                    <span>CSRF</span>
+                </div>
+
+                <a href="index.html" class="writeups-home-link">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    Portfolio
+                </a>
+            </div>
+
+            <div class="writeups-grid">
+                <article class="writeup-card">
+                    <div class="design-container writeup-card-header">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <div class="fake-terminal">rey@portswigger</div>
+
+                        <div class="fake-controls">
+                            <span>&mdash;</span>
+                            <span>&#9744;</span>
+                            <span>X</span>
+                        </div>
+                    </div>
+
+                    <span class="writeup-status">Draft Slot</span>
+                    <h3>Reflected XSS Lab Notes</h3>
+                    <p>
+                        Document the vulnerable input, test payload, browser result, and the lesson learned from the lab.
+                    </p>
+
+                    <div class="writeup-meta">
+                        <span>Platform: PortSwigger</span>
+                        <span>Topic: XSS</span>
+                        <span>Difficulty: Apprentice</span>
+                    </div>
+
+                    <a href="#" class="writeup-read-link">Read Notes</a>
+                </article>
+
+                <article class="writeup-card">
+                    <div class="design-container writeup-card-header">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <div class="fake-terminal">rey@portswigger</div>
+
+                        <div class="fake-controls">
+                            <span>&mdash;</span>
+                            <span>&#9744;</span>
+                            <span>X</span>
+                        </div>
+                    </div>
+
+                    <span class="writeup-status">Draft Slot</span>
+                    <h3>SQL Injection Basics</h3>
+                    <p>
+                        Track how the injection point was found, what query behavior changed, and how the lab was solved.
+                    </p>
+
+                    <div class="writeup-meta">
+                        <span>Platform: PortSwigger</span>
+                        <span>Topic: SQLi</span>
+                        <span>Difficulty: Apprentice</span>
+                    </div>
+
+                    <a href="#" class="writeup-read-link">Read Notes</a>
+                </article>
+
+                <article class="writeup-card">
+                    <div class="design-container writeup-card-header">
+                        <div class="circle-container">
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+                            <div class="circle-3"></div>
+                        </div>
+
+                        <div class="fake-terminal">rey@portswigger</div>
+
+                        <div class="fake-controls">
+                            <span>&mdash;</span>
+                            <span>&#9744;</span>
+                            <span>X</span>
+                        </div>
+                    </div>
+
+                    <span class="writeup-status">Draft Slot</span>
+                    <h3>Access Control Testing</h3>
+                    <p>
+                        Keep notes about role testing, direct object access checks, and how authorization mistakes were confirmed.
+                    </p>
+
+                    <div class="writeup-meta">
+                        <span>Platform: PortSwigger</span>
+                        <span>Topic: Access Control</span>
+                        <span>Difficulty: Apprentice</span>
+                    </div>
+
+                    <a href="#" class="writeup-read-link">Read Notes</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
