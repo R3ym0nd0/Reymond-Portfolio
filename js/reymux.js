@@ -225,6 +225,7 @@ function rootAccess(responseLine, folder) {
                 isPasswordPromptActive = false;
                 updatePrompt();
                 terminalInput.focus();
+                scrollTerminalToBottom();
             } else {
                 attempts++;
                 if (attempts >= maxAttempts) {
@@ -232,10 +233,12 @@ function rootAccess(responseLine, folder) {
                     password.remove();
                     isPasswordPromptActive = false;
                     terminalInput.focus();
+                    scrollTerminalToBottom();
                 } else {
                     responseLine.textContent = `[sudo] password for root (attempt ${attempts}/${maxAttempts}): `;
                     responseLine.appendChild(password);
                     requestAnimationFrame(() => password.focus());
+                    scrollTerminalToBottom();
                 }
             }
         }
@@ -244,6 +247,13 @@ function rootAccess(responseLine, folder) {
 
 const terminalInput = document.getElementById("terminal-input");
 const outputContainer = document.getElementById("output-container");
+const terminalContainer = document.getElementById("terminal-container");
+
+function scrollTerminalToBottom() {
+    requestAnimationFrame(() => {
+        terminalContainer.scrollTop = terminalContainer.scrollHeight;
+    });
+}
 
 terminalInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -306,6 +316,7 @@ The #1 vulnerability isn't in the system - it's YOU.`;
         } else if (command in commands) {
             commands[command]();
             if (command === "clear") {
+                scrollTerminalToBottom();
                 return;
             }
         } else {        
@@ -326,6 +337,7 @@ The #1 vulnerability isn't in the system - it's YOU.`;
         // Append to output
         childOutput.appendChild(commandLine);
         childOutput.appendChild(responseLine);
-        outputContainer.appendChild(childOutput);  
+        outputContainer.appendChild(childOutput);
+        scrollTerminalToBottom();
     }
 });
